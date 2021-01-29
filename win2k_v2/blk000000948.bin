@@ -1,0 +1,2058 @@
+[Version]
+LayoutFile=layout.inf, layout1.inf, layout2.inf
+Signature="$Windows NT$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Msft%
+DriverVer=11/14/1999,5.00.2183.1
+
+;============================================================================
+[ControlFlags]
+ExcludeFromSelect=*
+
+;============================================================================
+[DestinationDirs]
+DefaultDestDir=11                                ; LDID_SYS
+DfltDS.CopyFiles=10,TWAIN_32\MiiTWAIN            ; LDID_WIN\TWAIN_32\MiiTWAIN
+DfltDS.UninstallFiles=10,TWAIN_32\MiiTWAIN       ; LDID_WIN\TWAIN_32\MiiTWAIN
+;
+SCSI.Scanner.CopyFiles=11                        ; LDID_SYS
+SCSI.Scanner.CopySys32Files=10,system32\drivers  ; LDID_WIN\SYSTEM32\DRIVERS
+SCSI.Scanner.HelpFiles=10,help                   ; LDID_WIN\help
+SCSI.Scanner.DelOldFiles=10,twain_32\scanwiz     ; LDID_WIN\TWAIN_32\SCANWIZ
+;
+V300.CopyFiles=10,TWAIN_32\MiiTWAIN              ; LDID_WIN\TWAIN_32\MiiTWAIN
+V310.CopyFiles=10,TWAIN_32\MiiTWAIN              ; LDID_WIN\TWAIN_32\MiiTWAIN
+VX310.CopyFiles=10,TWAIN_32\MiiTWAIN             ; LDID_WIN\TWAIN_32\MiiTWAIN
+V600.CopyFiles=10,TWAIN_32\MiiTWAIN              ; LDID_WIN\TWAIN_32\MiiTWAIN
+E3.CopyFiles=10,TWAIN_32\MiiTWAIN                ; LDID_WIN\TWAIN_32\MiiTWAIN
+E310.CopyFiles=10,TWAIN_32\MiiTWAIN              ; LDID_WIN\TWAIN_32\MiiTWAIN
+EX310.CopyFiles=10,TWAIN_32\MiiTWAIN             ; LDID_WIN\TWAIN_32\MiiTWAIN
+E6.CopyFiles=10,TWAIN_32\MiiTWAIN                ; LDID_WIN\TWAIN_32\MiiTWAIN
+X3.CopyFiles=10,TWAIN_32\MiiTWAIN                ; LDID_WIN\TWAIN_32\MiiTWAIN
+X6.CopyFiles=10,TWAIN_32\MiiTWAIN                ; LDID_WIN\TWAIN_32\MiiTWAIN
+A34.CopyFiles=10,TWAIN_32\MiiTWAIN               ; LDID_WIN\TWAIN_32\MiiTWAIN
+A36.CopyFiles=10,TWAIN_32\MiiTWAIN               ; LDID_WIN\TWAIN_32\MiiTWAIN
+SM3.CopyFiles=10,TWAIN_32\MiiTWAIN               ; LDID_WIN\TWAIN_32\MiiTWAIN
+SM4.CopyFiles=10,TWAIN_32\MiiTWAIN               ; LDID_WIN\TWAIN_32\MiiTWAIN
+SM5.CopyFiles=10,TWAIN_32\MiiTWAIN               ; LDID_WIN\TWAIN_32\MiiTWAIN
+
+;============================================================================
+[Manufacturer]
+%Mfg%=Models
+
+;============================================================================
+[Models]
+
+; V300 - 85
+%SCSI\MICROTEKTR3_____________2.DeviceDesc%=V300.Scanner,MICROTEKTR3_____________2
+%SCSI\________SCANNER_300A4___1.DeviceDesc%=V300.Scanner,________SCANNER_300A4___1
+;%SCSI\________SCANNER_300A4___2.DeviceDesc%=V300.Scanner,________SCANNER_300A4___2
+
+;-------------------------------------------------------------------------------------
+; V310 - 8D/8D
+%SCSI\________SCANNER_300A4___2.DeviceDesc%=V310.Scanner,________SCANNER_300A4___2
+%SCSI\________SCANNER_300A4-100.DeviceDesc%=V310.Scanner,________SCANNER_300A4-100
+%SCSI\________SCANNER_300A4-102.DeviceDesc%=V310.Scanner,________SCANNER_300A4-102
+%SCSI\________SCANNER_310A4___2.DeviceDesc%=V310.Scanner,________SCANNER_310A4___2
+%SCSI\________SCANNER_310A4___3.DeviceDesc%=V310.Scanner,________SCANNER_310A4___3
+
+;-------------------------------------------------------------------------------------
+; VX310 - 93/93
+%SCSI\________SCANNER_300A4___4.DeviceDesc%=VX310.Scanner,________SCANNER_300A4___4
+
+;-------------------------------------------------------------------------------------
+; V600 - 8C/8C
+%SCSI\________SCANNER_600A4___1.DeviceDesc%=V600.Scanner,________SCANNER_600A4___1
+%SCSI\________SCANNER_600A4___2.DeviceDesc%=V600.Scanner,________SCANNER_600A4___2
+%SCSI\________SCANNER_600A4___3.DeviceDesc%=V600.Scanner,________SCANNER_600A4___3
+
+;-------------------------------------------------------------------------------------
+; E3
+%SCSI\________SCANNER_________1.DeviceDesc%=E3.Scanner,________SCANNER_________1
+%SCSI\________SCANNER_________2.DeviceDesc%=E3.Scanner,________SCANNER_________2
+
+;-------------------------------------------------------------------------------------
+; E310 - 90/90
+%SCSI\________SCANNER_300A4___3.DeviceDesc%=E310.Scanner,________SCANNER_300A4___3
+
+;-------------------------------------------------------------------------------------
+; EX310 - 92/92
+%SCSI\________SCANNER_300A4___5.DeviceDesc%=EX310.Scanner,________SCANNER_300A4___5
+
+;-------------------------------------------------------------------------------------
+; E6
+%SCSI\MICROTEKSCANMAKER_E6____1.DeviceDesc%=E6.Scanner,MICROTEKSCANMAKER_E6____1
+%SCSI\________SCANNER_600_____1.DeviceDesc%=E6.Scanner,________SCANNER_600_____1
+%SCSI\________SCANNER_600_____2.DeviceDesc%=E6.Scanner,________SCANNER_600_____2
+
+;-------------------------------------------------------------------------------------
+; X6 - 91, 99/91
+%SCSI\________SCANMAKER_X6____0.DeviceDesc%=X6.Scanner,________SCANMAKER_X6____0
+%SCSI\________SCANNER_636A4___0.DeviceDesc%=X6.Scanner,________SCANNER_636A4___0
+%SCSI\________SCANNER_636A4___1.DeviceDesc%=X6.Scanner,________SCANNER_636A4___1
+
+;-------------------------------------------------------------------------------------
+; X6EL - 98/91
+%SCSI\________SCANNER_636EL___0.DeviceDesc%=X6.Scanner,________SCANNER_636EL___0
+%SCSI\________SCANNER_636EL___1.DeviceDesc%=X6.Scanner,________SCANNER_636EL___1
+
+;-------------------------------------------------------------------------------------
+; A34 - 89/89
+%SCSI\________SCANNER_400A3___2.DeviceDesc%=A34.Scanner,________SCANNER_400A3___2
+%SCSI\________SCANNER_400A3___3.DeviceDesc%=A34.Scanner,________SCANNER_400A3___3
+
+;-------------------------------------------------------------------------------------
+; A36 - 8A/8A
+%SCSI\________SCANNER_600A3___1.DeviceDesc%=A36.Scanner,________SCANNER_600A3___1
+%SCSI\________SCANNER_600A3___2.DeviceDesc%=A36.Scanner,________SCANNER_600A3___2
+%SCSI\________SCANNER_600A3___3.DeviceDesc%=A36.Scanner,________SCANNER_600A3___3
+
+;-------------------------------------------------------------------------------------
+; SM3 - 59/59
+%SCSI\MICROTEKSCANMAKERIII____2.DeviceDesc%=SM3.Scanner,MICROTEKSCANMAKERIII____2
+%SCSI\MICROTEKSCANMAKERIII____3.DeviceDesc%=SM3.Scanner,MICROTEKSCANMAKERIII____3
+
+;-------------------------------------------------------------------------------------
+; SM4 - 81/81
+%SCSI\MICROTEKScanMaker_IV____0.DeviceDesc%=SM4.Scanner,MICROTEKScanMaker_IV____0
+%SCSI\MICROTEKScanMaker_IV____1.DeviceDesc%=SM4.Scanner,MICROTEKScanMaker_IV____1
+
+;-------------------------------------------------------------------------------------
+; SM5 - 87/87
+%SCSI\________SCANMAKER_V_____1.DeviceDesc%=SM5.Scanner,________SCANMAKER_V_____1
+%SCSI\________SCANMAKER_V_____2.DeviceDesc%=SM5.Scanner,________SCANMAKER_V_____2
+%SCSI\________SCANMAKER_5_____1.DeviceDesc%=SM5.Scanner,________SCANMAKER_5_____1
+%SCSI\________SCANMAKER_5_____2.DeviceDesc%=SM5.Scanner,________SCANMAKER_5_____2
+%SCSI\________SCANNER_1000TP__2.DeviceDesc%=SM5.Scanner,________SCANNER_1000TP__2
+
+;= SCSI SCANNERS ============================================================
+;
+[V300.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=V300.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,V300.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.V300]
+DelFiles=V300.CopyFiles
+
+[V300.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[V300.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[V300.CopyFiles]
+MISCAN32.DLL
+SM8D32.DLL
+
+;----------------------------------------------------------------------------
+[V310.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=V310.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,V310.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.V310]
+DelFiles=V310.CopyFiles
+
+[V310.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[V310.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[V310.CopyFiles]
+MISCAN32.DLL
+SM8D32.DLL
+
+;----------------------------------------------------------------------------
+[VX310.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=VX310.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,VX310.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.VX310]
+DelFiles=VX310.CopyFiles
+
+[VX310.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[VX310.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[VX310.CopyFiles]
+SM9332.DLL
+
+;----------------------------------------------------------------------------
+[V600.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=V600.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,V600.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.V600]
+DelFiles=V600.CopyFiles
+
+[V600.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[V600.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[V600.CopyFiles]
+SM8C32.DLL
+
+;----------------------------------------------------------------------------
+[E3.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=E3.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,E3.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.E3]
+DelFiles=E3.CopyFiles
+
+[E3.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[E3.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[E3.CopyFiles]
+JUPI32.DLL
+
+;----------------------------------------------------------------------------
+[E310.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=E310.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,E310.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.E310]
+DelFiles=E310.CopyFiles
+
+[E310.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[E310.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[E310.CopyFiles]
+SM9032.DLL
+
+;----------------------------------------------------------------------------
+[EX310.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=EX310.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,EX310.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.EX310]
+DelFiles=EX310.CopyFiles
+
+[EX310.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[EX310.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[EX310.CopyFiles]
+SM9232.DLL
+
+;----------------------------------------------------------------------------
+[E6.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=E6.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,E6.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.E6]
+DelFiles=E6.CopyFiles
+
+[E6.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[E6.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[E6.CopyFiles]
+HR132.DLL
+
+;----------------------------------------------------------------------------
+[X6.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+Events=Microtek.Events
+DeviceData=X6.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,X6.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.X6]
+DelFiles=X6.CopyFiles
+
+[X6.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[X6.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[X6.CopyFiles]
+SM9132.DLL
+
+;----------------------------------------------------------------------------
+[A34.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=A34.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,A34.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.A34]
+DelFiles=A34.CopyFiles
+
+[A34.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[A34.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[A34.CopyFiles]
+SM8932.DLL
+
+;----------------------------------------------------------------------------
+[A36.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=A36.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,A36.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.A36]
+DelFiles=A36.CopyFiles
+
+[A36.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[A36.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[A36.CopyFiles]
+SM8A32.DLL
+
+;----------------------------------------------------------------------------
+[SM3.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=SM3.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,SM3.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.SM3]
+DelFiles=SM3.CopyFiles
+
+[SM3.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[SM3.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[SM3.CopyFiles]
+SM5932.DLL
+
+;----------------------------------------------------------------------------
+[SM4.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=SM4.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,SM4.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.SM4]
+DelFiles=SM4.CopyFiles
+
+[SM4.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[SM4.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[SM4.CopyFiles]
+SM8132.DLL
+
+;----------------------------------------------------------------------------
+[SM5.Scanner]
+Include=    sti.inf
+Needs= STI.SCSISection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=SM5.DeviceData
+AddReg=SCSI.Scanner.AddReg
+CopyFiles=SCSI.Scanner.CopyFiles,SCSI.Scanner.CopySys32Files,DfltDS.CopyFiles,SM5.CopyFiles,SCSI.Scanner.HelpFiles
+DelFiles=SCSI.Scanner.DelOldFiles
+DeviceSubType=0x0101
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=DfltDS.UninstallFiles
+
+[Uninstall.SM5]
+DelFiles=SM5.CopyFiles
+
+[SM5.Scanner.Services]
+Include=    sti.inf
+Needs= STI.SCSISection.Services
+
+[SM5.DeviceData]
+TwainDS=%ScanWizard32%
+; 0:Flatbed, 1:Transmittive, 2:Sheetfeed
+Type=0
+
+[SM5.CopyFiles]
+SM8732.DLL
+
+;============================================================================
+[RestoreSTI]
+CopyFiles=SCSI.Scanner.CopyFiles
+
+[SCSI.Scanner.AddReg]
+;HKR,,HardwareConfig,1,2
+;
+HKR,,USDClass,,"{66CFF0C0-A94B-11d1-808C-0000E816F968}"
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968},,,"Microtek SCSI Scanner"
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968}\InProcServer32,,,%11%\MSMUSD.DLL
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968}\InProcServer32,ThreadingModel,,"Apartment"
+
+
+;============================================================================
+[DfltDS.CopyFiles]
+LTWAIN.DS
+ACQ32.DLL
+MSMGR32.DLL
+MPHASE32.DLL
+MSSTI.DLL
+DSPIMG32.DLL
+MSCANDC.INI
+MSAPN.INI
+
+[DfltDS.UninstallFiles]
+LTWAIN.DS
+
+[SCSI.Scanner.CopyFiles]
+msmusd.dll
+
+[SCSI.Scanner.CopySys32Files]
+
+[SCSI.Scanner.HelpFiles]
+mctektwn.hlp
+mctektwn.cnt
+
+[Microtek.Events]
+Event0=%Button%,{099183A0-AEB5-11d1-B964-0000E816F968},*
+
+[SCSI.Scanner.DelOldFiles]
+ DeIsL1.isu
+ MSAPN.INI
+ 3PASS32.DLL
+ MPHASE32.DLL
+ DSPIMG32.DLL
+ FILEIO32.DLL
+ HR132.DLL
+ LARRY32.DLL
+ LOUISA32.DLL
+ MARY32.DLL
+ MAVERI32.DLL
+ PCTREE32.DLL
+ PNRPCZ32.DLL
+ POSIT_32.DLL
+ RAVEN32.DLL
+ VMIISD.VXD
+ ScanWiz.gid
+ miscan32.dll
+ Jupi32.dll
+ Negat_32.dll
+ aspi32.dll
+ sm5932.dll
+ sm8a32.dll
+ sm8932.dll
+ sm8c32.dll
+ sm8d32.dll
+ C120.BMP
+ C120W95.BMP
+ MSPNRI.SYS
+ ASPIIF.EXE
+ MSCANDC.INI
+ scanwiz.hlp
+ Scan32.exe
+ msmgr32.dll
+ Blurmore32.8bf
+ EMBOSS32.8BF
+ EDGE32.8BF
+ BLUR32.8BF
+ USM32.8BF
+ Sharpenmore32.8bf
+ Sharpen32.8bf
+ twlogo.tif
+ Scanwz32.ds
+
+
+
+[Strings]
+Msft = "Microsoft"
+Mfg = "Microtek"
+
+scsiscan.SvcDesc = "SCSI Scanner Driver"
+miiscan.SvcDesc = "USB Scanner Driver"
+
+Button = "Go Button Press"
+ADP    = "Auto Detect Paper"
+
+ScanWizard32="Microtek Scan Module"
+
+;- Friendly Name ----------------------------------------------------------
+
+; V300
+SCSI\MICROTEKTR3_____________2.DeviceDesc= "ScanMaker V300"
+SCSI\________SCANNER_300A4___1.DeviceDesc= "ScanMaker V300"
+SCSI\________SCANNER_300A4___2.DeviceDesc= "ScanMaker V300/V310"
+
+; V310
+SCSI\________SCANNER_300A4-100.DeviceDesc= "ScanMaker V310"
+SCSI\________SCANNER_300A4-102.DeviceDesc= "ScanMaker V310"
+SCSI\________SCANNER_310A4___2.DeviceDesc= "ScanMaker V310"
+SCSI\________SCANNER_310A4___3.DeviceDesc= "ScanMaker V310"
+
+;VX310
+SCSI\________SCANNER_300A4___4.DeviceDesc= "ScanMaker V310"
+
+; V600
+SCSI\________SCANNER_600A4___1.DeviceDesc= "ScanMaker V600"
+SCSI\________SCANNER_600A4___2.DeviceDesc= "ScanMaker V600"
+SCSI\________SCANNER_600A4___3.DeviceDesc= "ScanMaker V600"
+
+; E3
+SCSI\________SCANNER_________1.DeviceDesc= "ScanMaker E3"
+SCSI\________SCANNER_________2.DeviceDesc= "ScanMaker E3"
+
+; E310
+SCSI\________SCANNER_300A4___3.DeviceDesc= "ScanMaker E3 Plus"
+
+; EX310
+SCSI\________SCANNER_300A4___5.DeviceDesc= "ScanMaker E3 Plus"
+
+; E6
+SCSI\MICROTEKSCANMAKER_E6____1.DeviceDesc= "ScanMaker E6"
+SCSI\________SCANNER_600_____1.DeviceDesc= "ScanMaker E6"
+SCSI\________SCANNER_600_____2.DeviceDesc= "ScanMaker E6"
+
+;VX6
+SCSI\________SCANNER_V636____0.DeviceDesc= "ScanMaker V636"
+SCSI\________SCANNER_V636A4__1.DeviceDesc= "ScanMaker V636"
+SCSI\________SCANNER_V636A4__2.DeviceDesc= "ScanMaker V636"
+SCSI\________SCANNER_V636A4__3.DeviceDesc= "ScanMaker V636"
+
+; X6
+SCSI\________SCANMAKER_X6____0.DeviceDesc = "ScanMaker X6"
+SCSI\________SCANNER_636A4___0.DeviceDesc = "ScanMaker X6"
+SCSI\________SCANNER_636A4___1.DeviceDesc = "ScanMaker X6"
+
+; X6EL
+SCSI\________SCANNER_636EL___0.DeviceDesc= "ScanMaker X6EL"
+SCSI\________SCANNER_636EL___1.DeviceDesc= "ScanMaker X6EL"
+
+; A34
+SCSI\________SCANNER_400A3___2.DeviceDesc= "ScanMaker 6400XL"
+SCSI\________SCANNER_400A3___3.DeviceDesc= "ScanMaker 6400XL"
+
+; A36
+SCSI\________SCANNER_600A3___1.DeviceDesc= "ScanMaker 9600XL"
+SCSI\________SCANNER_600A3___2.DeviceDesc= "ScanMaker 9600XL"
+SCSI\________SCANNER_600A3___3.DeviceDesc= "ScanMaker 9600XL"
+
+; SM3
+SCSI\MICROTEKSCANMAKERIII____2.DeviceDesc= "ScanMaker III"
+SCSI\MICROTEKSCANMAKERIII____3.DeviceDesc= "ScanMaker III"
+
+; SM4
+SCSI\MICROTEKScanMaker_IV____0.DeviceDesc= "ScanMaker 4"
+SCSI\MICROTEKScanMaker_IV____1.DeviceDesc= "ScanMaker 4"
+
+; SM5
+SCSI\________SCANMAKER_V_____1.DeviceDesc= "ScanMaker 5"
+SCSI\________SCANMAKER_V_____2.DeviceDesc= "ScanMaker 5"
+SCSI\________SCANMAKER_5_____1.DeviceDesc= "ScanMaker 5"
+SCSI\________SCANMAKER_5_____2.DeviceDesc= "ScanMaker 5"
+SCSI\________SCANNER_1000TP__2.DeviceDesc= "ScanMaker 5"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    [Version]
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+Signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Msft%
+DriverVer=11/14/1999,5.00.2183.1
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+DefaultDestDir=11                                ; LDID_SYS
+CopyFiles.Sys=11                                 ; LDID_SYS
+CopyFiles.Sys32=10,system32\drivers
+CopyFiles.Windows=10                             ; LDID_WIN
+CopyFiles.HelpFiles=10,help                      ; LDID_WIN\help
+UninstallFiles.Twain.Common=10,TWAIN_32\MIITWAIN ; LDID_WIN\TWAIN_32\MIITWAIN
+CopyFiles.Twain.Common=10,TWAIN_32\MIITWAIN      ; LDID_WIN\TWAIN_32\MIITWAIN
+CopyFiles.Twain.SLIM_USB=10,TWAIN_32\MIITWAIN    ; LDID_WIN\TWAIN_32\MIITWAIN
+CopyFiles.Twain.X6_USB=10,TWAIN_32\MIITWAIN      ; LDID_WIN\TWAIN_32\MIITWAIN
+
+USB.Scanner.DelOldFiles=10,twain_32\scanwiz      ; LDID_WIN\TWAIN_32\SCANWIZ
+
+
+[Manufacturer]
+%Mfg%=Models
+
+[Models]
+%USB\VID_05DA&PID_0094.DeviceDesc%=Model.SLIM_USB,USB\VID_05DA&PID_0094
+%USB\VID_05DA&PID_00A0.DeviceDesc%=Model.SLIM_USB,USB\VID_05DA&PID_00A0
+%USB\VID_05DA&PID_0099.DeviceDesc%=Model.X6_USB,USB\VID_05DA&PID_0099
+
+;-------------------------------------------------------------------------------------------
+[Model.SLIM_USB]
+Include=    sti.inf
+Needs= STI.USBSection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=DeviceData.SLIM_USB
+AddReg=AddReg.USB
+CopyFiles=CopyFiles.Sys,CopyFiles.Sys32,CopyFiles.Windows,CopyFiles.Twain.Common,CopyFiles.Twain.SLIM_USB,CopyFiles.HelpFiles
+DelFiles=DelFiles.Sys,USB.Scanner.DelOldFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=UninstallFiles.Twain.Common
+Events=USB.Events
+
+[Model.SLIM_USB.Services]
+Include=    sti.inf
+Needs= STI.USBSection.Services
+
+[DeviceData.SLIM_USB]
+TwainDS=%ScanWizard32%
+Type=0
+
+[CopyFiles.Twain.SLIM_USB]
+SMA032.dll
+
+[Uninstall.SLIM_USB]
+DelFiles=CopyFiles.Twain.SLIM_USB
+
+;-------------------------------------------------------------------------------------------
+[Model.X6_USB]
+Include=    sti.inf
+Needs= STI.USBSection
+
+SubClass=StillImage
+DeviceType=1
+Capabilities=3
+DeviceData=DeviceData.X6_USB
+AddReg=AddReg.USB
+CopyFiles=CopyFiles.Sys,CopyFiles.Sys32,CopyFiles.Windows,CopyFiles.Twain.Common,CopyFiles.Twain.X6_USB,CopyFiles.HelpFiles
+DelFiles=DelFiles.Sys,USB.Scanner.DelOldFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+UninstallSection=UninstallFiles.Twain.Common
+Events=USB.Events
+
+[Model.X6_USB.Services]
+Include=    sti.inf
+Needs= STI.USBSection.Services
+
+[DeviceData.X6_USB]
+TwainDS=%ScanWizard32%
+Type=0
+
+[CopyFiles.Twain.X6_USB]
+SM9132.dll
+
+[Uninstall.X6_USB]
+DelFiles=CopyFiles.Twain.X6_USB
+
+;-------------------------------------------------------------------------------------------
+[USB.Events]
+Event0="%ButtonPress%",{099183A0-AEB5-11d1-B964-0000E816F968}
+
+[AddReg.USB]
+
+;stuff for still image support in memphis memphis
+HKR,,USDClass,,"{66CFF0C0-A94B-11d1-808C-0000E816F968}"
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968},,,"Microtek USB Scanner"
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968}\InProcServer32,,,%11%\msmusd.dll
+HKCR,CLSID\{66CFF0C0-A94B-11d1-808C-0000E816F968}\InProcServer32,ThreadingModel,,"Apartment"
+
+[CopyFiles.Sys]
+MSMUSD.DLL
+
+[CopyFiles.Sys32]
+
+[CopyFiles.Windows]
+
+[CopyFiles.Twain.Common]
+LTWAIN.DS
+ACQ32.DLL
+MSMGR32.DLL
+MPHASE32.DLL
+MSSTI.DLL
+DSPIMG32.DLL
+MSCANDC.INI
+MSAPN.INI
+
+[CopyFiles.HelpFiles]
+MCTEKTWN.CNT
+MCTEKTWN.HLP
+
+[UninstallFiles.Twain.Common]
+LTWAIN.DS
+
+[DelFiles.Sys]
+; Temporarily delete this file from windows\system during install so it
+; doesn't conflict with new location in windows\system32
+usbscan.sys,,,1
+
+[USB.Scanner.DelOldFiles]
+ DeIsL1.isu
+ MSAPN.INI
+ 3PASS32.DLL
+ MPHASE32.DLL
+ DSPIMG32.DLL
+ FILEIO32.DLL
+ HR132.DLL
+ LARRY32.DLL
+ LOUISA32.DLL
+ MARY32.DLL
+ MAVERI32.DLL
+ PCTREE32.DLL
+ PNRPCZ32.DLL
+ POSIT_32.DLL
+ RAVEN32.DLL
+ VMIISD.VXD
+ ScanWiz.gid
+ miscan32.dll
+ Jupi32.dll
+ Negat_32.dll
+ aspi32.dll
+ sm5932.dll
+ sm8a32.dll
+ sm8932.dll
+ sm8c32.dll
+ sm8d32.dll
+ C120.BMP
+ C120W95.BMP
+ MSPNRI.SYS
+ ASPIIF.EXE
+ MSCANDC.INI
+ scanwiz.hlp
+ Scan32.exe
+ msmgr32.dll
+ Blurmore32.8bf
+ EMBOSS32.8BF
+ EDGE32.8BF
+ BLUR32.8BF
+ USM32.8BF
+ Sharpenmore32.8bf
+ Sharpen32.8bf
+ twlogo.tif
+ Scanwz32.ds
+
+[Strings]
+Msft="Microsoft"
+Mfg="Microtek International Inc."
+USB\VID_05DA&PID_0094.DeviceDesc="SlimScan C3u"
+USB\VID_05DA&PID_00A0.DeviceDesc="SlimScan C3u"
+USB\VID_05DA&PID_0099.DeviceDesc="ScanMaker X6u"
+
+DiskDesc="Microtek Scanner Driver Disk"
+ButtonPress="Go Button Press"
+usbscan.SvcDesc= "Microsoft USB Scanner Driver"
+
+ScanWizard32="Microtek Scan Module"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [version]
+signature="$CHICAGO$"
+LayoutFile=layout.inf
+SetupClass=BASE
+[DefaultInstall]
+CopyFiles     =  NetMtg.Install.App,NetMtg.Install.App.NT,NetMtg.Install.Sys,NetMtg.Install.Sys.NT,NetMtg.Install.Shared,NetMtg.Install.Help
+DelFiles      =  NetMtg.CleanPrev.App,NetMtg.CleanPrev.Sys,NetMtg.CleanPrev.Help 
+AddReg        =  NetMtg.Install.Reg,NetMtg.Install.Reg.PerUser,NetMtg.Install.ActiveSetup.NT,NetMtg.Install.Reg.NT
+DelReg        =  NetMtg.CleanPrev.Reg,NetMtg.CleanPrev.Reg.PerUser
+ProfileItems  =  NetMtg.Profile.Add,NetMtg.Profile.Remove1,NetMtg.Profile.Remove2
+UpdateInis    =  NetMtg.Install.Inis
+RegisterDlls  =  NetMtg.Register.Srvrs
+[NetMtg.Install.PerUser.NT]
+AddReg            = NetMtg.Install.Reg.PerUser
+DelReg            = NetMtg.CleanPrev.Reg.PerUser
+[NetMtg.Remove]
+AddReg         = NetMtg.Remove.ActiveSetup.NT
+DelFiles       = NetMtg.Remove.Sys,NetMtg.Remove.Sys.NT,NetMtg.Remove.App,NetMtg.Remove.App.NT,NetMtg.Remove.Help
+DelReg         = NetMtg.Remove.Reg,NetMtg.Remove.Reg.PerUser
+UpdateInis     = NetMtg.Remove.Inis
+[NetMtg.Remove.PerUser.NT]
+DelReg            = NetMtg.Remove.Reg.PerUser
+[DestinationDirs]
+NetMtg.Install.App        = 16422,%NetMtgDir%
+NetMtg.Install.App.NT     = 16422,%NetMtgDir%
+NetMtg.Install.Shared     = 11    ; LDID_SYS
+NetMtg.Install.Sys        = 11    ; LDID_SYS
+NetMtg.Install.Sys.NT     = 11    ; LDID_SYS
+NetMtg.Install.Help       = 18    ; Help directory
+NetMtg.Install.Inf        = 17    ; LDID_INF
+NetMtg.CleanPrev.App      = 16422,%NetMtgDir%
+NetMtg.CleanPrev.Sys      = 11    ; LDID_SYS
+NetMtg.CleanPrev.Help     = 18    ; Help directory
+NetMtg.Remove.App         = 16422,%NetMtgDir%
+NetMtg.Remove.App.NT      = 16422,%NetMtgDir%
+NetMtg.Remove.Sys         = 11    ; LDID_SYS
+NetMtg.Remove.Sys.NT      = 11    ; LDID_SYS
+NetMtg.Remove.Help        = 18    ; Help directory
+[NetMtg.Register.Srvrs]
+11,,mnmsrvc.exe,,,"-install"
+16422,%NetMtgDir%,conf.exe
+11,,ils.dll,1
+16422,%NetMtgDir%,confmrsl.dll,1
+11,,msconf.dll,1
+16422,%NetMtgDir%,rrcm.dll,1
+[NetMtg.Remove.Cmds]
+rundll32.exe ""%11%\nmmkcert.dll"",NmMakeCertCleanup
+%11%\mnmsrvc -remove
+"""%16422%\%NetMtgDir%\conf.exe""" -unregserver
+%11%\regsvr32.exe /s /u """%16422%\%NetMtgDir%\confmrsl.dll"""
+%11%\regsvr32.exe /s /u %11%\msconf.dll
+%11%\regsvr32.exe /s /u """%16422%\%NetMtgDir%\rrcm.dll"""
+[NetMtg.Remove.Dirs]
+%16422%/%NetMtgDir%/%RecFileDir%
+%16422%/%NetMtgDir%/%SpeedDialDir%
+%16422%/%NetMtgDir%
+[NetMtg.Profile.Remove1]
+Name="%PGMITEM_NETMTG%",2
+[NetMtg.Profile.Remove2]
+Name="%PGMITEM_NETMTG_OLD%",2
+[NetMtg.Profile.Add]
+Name="%PGMGRP_COMMUNICATIONS%\%PGMITEM_NETMTG%"
+CmdLine=16422,%NetMtgDir%,"conf.exe"
+InfoTip=%NETMTG_INFO_TIP%
+[NetMtg.Install.Shared]
+lhacm.acm,,,32
+ils.dll,,,32
+[NetMtg.Install.Help]
+conf.hlp
+conf.cnt
+conf.chm
+nmchat.chm
+nmwhiteb.chm
+[NetMtg.Remove.Help]
+conf.hlp,,,1
+conf.cnt,,,1
+conf.chm,,,1
+conf.gid,,,1
+nmchat.chm,,,1
+nmwhiteb.chm,,,1
+[NetMtg.Install.Sys]
+msconf.dll
+msg723.acm
+mnmsrvc.exe
+nmmkcert.dll
+msh263.drv
+msh261.drv
+[NetMtg.Install.Sys.NT]
+mnmdd.dll
+nmevtmsg.dll
+[NetMtg.Remove.Sys]
+msconf.dll,,,1
+msg723.acm,,,1
+mnmsrvc.exe,,,1
+nmmkcert.dll,,,1
+msh263.drv,,,1
+msh261.drv,,,1
+[NetMtg.Remove.Sys.NT]
+mnmdd.dll
+nmevtmsg.dll,,,1
+[NetMtg.CleanPrev.Sys]
+ConfLnk.dll,,,1
+imsconf.dll,,,1
+nac.dll,,,1
+msiprt.dll,,,1
+rrcm.dll,,,1
+Confcp.dll,,,1
+ulclient.dll,,,1
+ulsvc.exe,,,1
+ft32.exe,,,1
+xmsconf.ocx,,,1
+nmpgmgrp.exe
+[NetMtg.Install.App]
+cb32.exe
+conf.exe
+nmoldwb.dll
+nmft.dll
+nmwb.dll
+wb32.exe
+nmchat.dll
+netmeet.htm
+TestSnd.wav
+Blip.wav
+MST120.DLL
+MST123.DLL
+nmcom.dll
+confmrsl.dll
+nac.dll
+h323cc.dll
+rrcm.dll
+callcont.dll
+[NetMtg.Install.App.NT]
+nmasnt.dll
+nmas.dll 
+dcap32.dll
+[NetMtg.Remove.App]
+cb32.exe,,,1
+conf.exe,,,1
+nmoldwb.dll,,,1
+nmft.dll,,,1
+nmwb.dll,,,1
+wb32.exe,,,1
+nmchat.dll,,,1
+netmeet.htm,,,1
+support.txt,,,1
+license.txt,,,1
+RingIn.wav,,,1
+TestSnd.wav,,,1
+Blip.wav,,,1
+callLog.dat,,,1
+MST120.DLL,,,1
+MST123.DLL,,,1
+nmcom.dll,,,1
+confmrsl.dll,,,1
+nac.dll,,,1
+h323cc.dll,,,1
+rrcm.dll,,,1
+callcont.dll,,,1
+[NetMtg.Remove.App.NT]
+nmas.dll,,,1
+nmasnt.dll,,,1
+dcap32.dll,,,1
+[NetMtg.CleanPrev.App]
+soedber.dll,,,1
+Type.wav,,,1
+mnmccl_.dll,,,1
+mnmhlp_.dll,,,1
+mnmclpm_.dll,,,1
+mnmcpi_.dll,,,1
+mnmgdc_.dll,,,1
+mnmtdd_.dll,,,1
+mnmtph16.dll,,,1
+mnmtph32.dll,,,1
+mnmcmg_.dll,,,1
+mnmmg_.dll,,,1
+obscure.bmp,,,1
+netmtgrm.exe,,,1
+msconfft.exe,,,1
+msmcstcp.dll,,,1
+ossapi.dll,,,1
+ossmem.dll,,,1
+soedper.dll,,,1
+ft32.exe,,,1
+mnmal_.dll,,,1
+mnmalp.exe,,,1
+mnmclp_.dll,,,1
+mnmdump_.dll,,,1
+mnmft_.dll,,,1
+mnmmsg_.dll,,,1
+mnmnet.exe,,,1
+mnmnet_.dll,,,1
+mnmom.exe,,,1
+mnmom_.dll,,,1
+mnmshco.exe,,,1
+mnmshco_.dll,,,1
+mnmtapm_.dll,,,1
+mnmthk16.dll,,,1
+mnmtrc32.dll,,,1
+mnmut_.dll,,,1
+mnmvdd.386,,,1
+mnmwb_.dll,,,1
+mnmtddm_.dll,,,1
+mnmtddn_.dll,,,1
+mnmtdds_.dll,,,1
+mnmtrc_.dll,,,1
+mcatipx.dll,,,1
+gccnc.dll,,,1
+mcsnc.dll,,,1
+NULLMDM.DLL,,,1
+mcatpstn.dll,,,1
+nmoss.dll,,,1
+mnmcrsp_.dll,,,1
+msgccmcs.dll,,,1
+mcs32.dll,,,1
+gcc32.dll,,,1
+gki.dll,,,1
+h245.dll,,,1
+h245ws.dll,,,1
+ulsulp.dll,,,1
+msica.dll,,,1
+msicares.dll,,,1
+wbres.dll,,,1
+cbres.dll,,,1
+nmres.dll,,,1
+netmeet.txt,,,1
+mnmcpi32.dll,,,1
+mnmhook_.dll,,,1
+mnmas16.dll,,,1
+nmexchex.dll,,,1
+msconfft.dll,,,1
+nmmkcert.dll,,,1
+nmmigrat.dll,,,1
+mnmdd.dll,,,1
+mnmdd.inf,,,1
+mnmdd.sys,,,1
+license.txt
+[NetMtg.CleanPrev.Help]
+msica.hlp
+msica.cnt
+[NetMtg.Install.Reg]
+HKLM,%KEY_CONFERENCING%,"InstallationDirectory",,"%16422%\%NetMtgDir%"
+HKLM,%KEY_CONFERENCING%,"NodeControllerName",,"conf.exe"
+HKLM,"SOFTWARE\Clients\Internet Call",,,"Microsoft NetMeeting"
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting",,,"%PRODUCT_NAME%"
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\Protocols\callto",,,"URL: CallTo Protocol"
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\Protocols\callto","EditFlags",1,02,00,00,00
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\Protocols\callto","URL Protocol",,""
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\Protocols\callto\DefaultIcon",,,"""%16422%\%NetMtgDir%\conf.exe"",1"
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\shell\open\command",,,"""%16422%\%NetMtgDir%\conf.exe"""
+HKLM,"SOFTWARE\Clients\Internet Call\Microsoft NetMeeting\Protocols\callto\shell\open\command",,,"rundll32.exe msconf.dll,CallToProtocolHandler %%l"
+HKCR,"callto",,,"URL: CallTo Protocol"
+HKCR,"callto","EditFlags",1,02,00,00,00
+HKCR,"callto","URL Protocol",,""
+HKCR,"callto\DefaultIcon",,,"""%16422%\%NetMtgDir%\conf.exe"",1"
+HKCR,"callto\shell\open\command",,,"rundll32.exe msconf.dll,CallToProtocolHandler %%l"
+HKCR,CLSID\{085C06A0-3CAA-11d0-A00E-00A024A85A2C},,,%QoS%
+HKCR,CLSID\{085C06A0-3CAA-11d0-A00E-00A024A85A2C}\InProcServer32,,,"""%16422%\%NetMtgDir%\nac.dll"""
+HKCR,CLSID\{085C06A0-3CAA-11d0-A00E-00A024A85A2C}\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\{068B0800-718C-11d0-8B1A-00A0C91BC90E},,,%NMMANAGER_OBJECT3%
+HKCR,CLSID\{068B0800-718C-11d0-8B1A-00A0C91BC90E}\InProcServer32,,,"""%16422%\%NetMtgDir%\nmcom.dll"""
+HKCR,CLSID\{068B0800-718C-11d0-8B1A-00A0C91BC90E}\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\{8ED14CC0-7A1F-11d0-92F6-00A0C922E6B2},,,%INSTALL_CODECS%
+HKCR,CLSID\{8ED14CC0-7A1F-11d0-92F6-00A0C922E6B2}\InProcServer32,,,"""%16422%\%NetMtgDir%\nac.dll"""
+HKCR,CLSID\{8ED14CC0-7A1F-11d0-92F6-00A0C922E6B2}\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\QuickCam video capture driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\QuickCam video capture driver","dwNumColors",1,03,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\QuickCam video capture driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\QuickCam video capture driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\QuickCam video capture driver","bmi4bitColors",1,00,00,00,00,ff,ff,\
+ff,00,ee,ee,ee,00,dd,dd,dd,00,cc,cc,cc,00,bb,bb,bb,00,aa,aa,aa,00,99,99,99,00,88,88,88,00,77,77,77,00,66,66,66,00,55,55,55,00,\
+44,44,44,00,33,33,33,00,22,22,22,00,11,11,11,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix Quickcam(Grayscale)","dwImageSize",1,00,01,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix Quickcam(Grayscale)","dwNumColors",1,03,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix Quickcam(Grayscale)","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix Quickcam(Grayscale)","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix Quickcam(Grayscale)","bmi4bitColors",1,00,00,00,00,ff,ff,\
+ff,00,ee,ee,ee,00,dd,dd,dd,00,cc,cc,cc,00,bb,bb,bb,00,aa,aa,aa,00,99,99,99,00,88,88,88,00,77,77,77,00,66,66,66,00,55,55,55,00,\
+44,44,44,00,33,33,33,00,22,22,22,00,11,11,11,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam video capture driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam video capture driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam video capture driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam video capture driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam driver for Windows NT","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam driver for Windows NT","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam driver for Windows NT","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Color QuickCam driver for Windows NT","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum by Winnov","dwImageSize",1,40,04,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum by Winnov","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum by Winnov","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum by Winnov","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Capture driver for V732X","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Capture driver for V732X","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Capture driver for V732X","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Capture driver for V732X","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\isvrpro.drv","dwImageSize",1,00,81,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\isvrpro.drv","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\isvrpro.drv","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\isvrpro.drv","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video shell driver","dwImageSize",1,00,81,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video shell driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video shell driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video shell driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\video driver","dwDialogs",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\spigot.dll","dwImageSize",1,04,81,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\spigot.dll","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\spigot.dll","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\spigot.dll","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Win/TV Video Capture Driver","dwImageSize",1,04,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Win/TV Video Capture Driver","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Win/TV Video Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Win/TV Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Video Blaster SE100","dwImageSize",1,44,85,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Video Blaster SE100","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Video Blaster SE100","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Video Blaster SE100","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Orchid Vidiola Capture Driver","dwImageSize",1,04,81,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Orchid Vidiola Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Orchid Vidiola Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Orchid Vidiola Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\EyeWay95 Capture Driver","dwImageSize",1,44,85,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\EyeWay95 Capture Driver","dwNumColors",1,0C,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\EyeWay95 Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\EyeWay95 Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miro AVI CapCodec driver","dwImageSize",1,40,85,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miro AVI CapCodec driver","dwNumColors",1,0C,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miro AVI CapCodec driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miro AVI CapCodec driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree Bt848 Capture Driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree Bt848 Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree Bt848 Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree Bt848 Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum Video Capture","dwImageSize",1,40,04,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum Video Capture","dwNumColors",1,0C,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum Video Capture","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Videum Video Capture","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ConferenceCard video Device Driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ConferenceCard video Device Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ConferenceCard video Device Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ConferenceCard video Device Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Nogatech Ltd., Video Capture Driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Nogatech Ltd., Video Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Nogatech Ltd., Video Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Nogatech Ltd., Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Multimedia Video Driver","dwImageSize",1,40,05,c0,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Multimedia Video Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Multimedia Video Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Multimedia Video Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\FullVideo Supreme Driver","dwImageSize",1,40,05,40,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\FullVideo Supreme Driver","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\FullVideo Supreme Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\FullVideo Supreme Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\S3 Video Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\S3 Video Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\S3 Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\S3 Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Video Capture","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Toshiba Video Capture Card driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Toshiba Video Capture Card driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Toshiba Video Capture Card driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Toshiba Video Capture Card driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 100 Video Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 100 Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 100 Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-100 Video Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-100 Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-100 Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 100 Video Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-100 Video Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Digital Vision ComputersEyes/NB","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Digital Vision ComputersEyes/NB","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Digital Vision ComputersEyes/NB","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Digital Vision ComputersEyes/NB","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/1024 Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\////FAST Multimedia AG. MJPG Capture Driver","dwImageSize",1,40,05,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\////FAST Multimedia AG. MJPG Capture Driver","dwNumColors",1,0c,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\////FAST Multimedia AG. MJPG Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\////FAST Multimedia AG. MJPG Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO DC30/DC10 capture driver","dwImageSize",1,00,01,40,80
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO DC30/DC10 capture driver","dwNumColors",1,0c,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO DC30/DC10 capture driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO DC30/DC10 capture driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TVTap VidCap Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TVTap VidCap Driver","dwNumColors",1,0c,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TVTap VidCap Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TVTap VidCap Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Bt848 NT Video Capture Driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Bt848 NT Video Capture Driver","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Bt848 NT Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Hauppauge Bt848 NT Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO Capture Driver","dwImageSize",1,00,01,40,80
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO Capture Driver","dwNumColors",1,0c,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\miroVIDEO Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickCam VC USB","dwImageSize",1,00,05,40,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickCam VC USB","dwNumColors",1,0c,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickCam VC USB","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickCam VC USB","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\USB Video Camera for Intel Proshare technology","dwImageSize",1,00,05,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\USB Video Camera for Intel Proshare technology","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\USB Video Camera for Intel Proshare technology","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\USB Video Camera for Intel Proshare technology","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it Digital Video PC Camera","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it Digital Video PC Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it Digital Video PC Camera","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it Digital Video PC Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\IBM PC Camera","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\IBM PC Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\IBM PC Camera","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\IBM PC Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it PC Camera","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it PC Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it PC Camera","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\C-it PC Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech USB Video Camera","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech USB Video Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech USB Video Camera","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech USB Video Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ViCAM AVI Capture Driver","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ViCAM AVI Capture Driver","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ViCAM AVI Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ViCAM AVI Capture Driver","dwDialogs",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Buster Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Buster Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Buster Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Buster Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-1000 Video Capture/Encoder","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-1000 Video Capture/Encoder","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-1000 Video Capture/Encoder","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey-1000 Video Capture/Encoder","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 1000 Video Capture Driver","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 1000 Video Capture Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 1000 Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Osprey 1000 Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Capture Driver for NT","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Capture Driver for NT","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Capture Driver for NT","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ComputerEyes/PCI Capture Driver for NT","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickClip USB","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickClip USB","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickClip USB","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Connectix QuickClip USB","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\16 bit dll of the TOSHIBA NoteBook Built-In Conferencing System","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\16 bit dll of the TOSHIBA NoteBook Built-In Conferencing System","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\16 bit dll of the TOSHIBA NoteBook Built-In Conferencing System","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\16 bit dll of the TOSHIBA NoteBook Built-In Conferencing System","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Sony 1394 CCM-DS250 Desktop Camera","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Sony 1394 CCM-DS250 Desktop Camera","dwNumColors",1,00,01,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Sony 1394 CCM-DS250 Desktop Camera","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Sony 1394 CCM-DS250 Desktop Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ISVR III Capture Driver","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ISVR III Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ISVR III Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ISVR III Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC323 Digital Video Camera","dwImageSize",1,00,05,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC323 Digital Video Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC323 Digital Video Camera","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC323 Digital Video Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TOPCAM Digital CCD Camera Driver","dwImageSize",1,00,05,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TOPCAM Digital CCD Camera Driver","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TOPCAM Digital CCD Camera Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\TOPCAM Digital CCD Camera Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Video Basic Capture Driver","dwImageSize",1,00,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Video Basic Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Video Basic Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\ATI Video Basic Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Pcam for Wintronix","dwImageSize",1,00,05,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Pcam for Wintronix","dwNumColors",1,04,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Pcam for Wintronix","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Pcam for Wintronix","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Creative Video Blaster WebCam II USB","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Creative Video Blaster WebCam II USB","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Creative Video Blaster WebCam II USB","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Creative Video Blaster WebCam II USB","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Philips CIF Digital Camera; Video","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Philips CIF Digital Camera; Video","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Philips CIF Digital Camera; Video","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Philips CIF Digital Camera; Video","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC 300 Digital Video Camera","dwImageSize",1,00,05,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC 300 Digital Video Camera","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC 300 Digital Video Camera","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Kodak DVC 300 Digital Video Camera","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Matrox VidCap Driver","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Matrox VidCap Driver","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Matrox VidCap Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Matrox VidCap Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree PCI Video Capture Driver","dwImageSize",1,40,01,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree PCI Video Capture Driver","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree PCI Video Capture Driver","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\MSVIDEO: Brooktree PCI Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Mpact Mediaware Video Capture Driver","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Mpact Mediaware Video Capture Driver","dwNumColors",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Mpact Mediaware Video Capture Driver","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Mpact Mediaware Video Capture Driver","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\LifeView FlyVideo Slim","dwImageSize",1,40,04,40,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\LifeView FlyVideo Slim","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\LifeView FlyVideo Slim","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\LifeView FlyVideo Slim","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech QuickCam VC USB","dwImageSize",1,40,04,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech QuickCam VC USB","dwNumColors",1,08,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech QuickCam VC USB","dwStreamingMode",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Logitech QuickCam VC USB","dwDialogs",1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Intel USB Video Camera III","dwImageSize",1,00,05,00,02
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Intel USB Video Camera III","dwNumColors",1,20,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Intel USB Video Camera III","dwStreamingMode",1,00,00,00,00
+HKLM,"%KEY_CONFERENCING%\CaptureDevices\Intel USB Video Camera III","dwDialogs",1,02,00,00,00
+HKLM,"Software\Microsoft\Windows\CurrentVersion\App Paths\CONF.EXE",,,"%16422%\%NetMtgDir%\conf.exe"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\App Paths\CONF.EXE","Path",,"%16422%\%NetMtgDir%;"
+HKCR,CLSID\{30E7F2A0-EC4C-11ce-8865-00805F742EF6},,,%ConfLnk%
+HKCR,CLSID\{30E7F2A0-EC4C-11ce-8865-00805F742EF6}\InProcServer32,,,"msconf.dll"
+HKCR,CLSID\{30E7F2A0-EC4C-11ce-8865-00805F742EF6}\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,.cnf,,,"ConferenceLink"
+HKCR,ConferenceLink,,,%ConfLnk%
+HKCR,ConferenceLink,"EditFlags",1,02,00,01,00
+HKCR,ConferenceLink,"IsShortcut",,""
+HKCR,ConferenceLink,"NeverShowExt",,""
+HKCR,ConferenceLink\ClsID,,,"{30E7F2A0-EC4C-11ce-8865-00805F742EF6}"
+HKCR,ConferenceLink\DefaultIcon,,,"msconf.dll,-103"
+HKCR,ConferenceLink\shell\open\command,,,"rundll32.exe msconf.dll,OpenConfLink %%l"
+HKCR,".uls",,,"ulsfile"
+HKCR,".uls","Content Type",,"text/iuls"
+HKCR,"ulsfile",,,"%MSIPTYPE%"
+HKCR,"MIME\Database\Content Type\text/iuls","Extension",,".uls"
+HKCR,".323",,,"h323file"
+HKCR,".323","Content Type",,"text/h323"
+HKCR,"h323file",,,"%H323TYPE%"
+HKCR,"MIME\Database\Content Type\text/h323","Extension",,".323"
+HKCR,".iii",,2,"iiifile"
+HKCR,".iii","Content Type",2,"application/x-iphone"
+HKCR,"iiifile",,2,"%IPHONETYPE%"
+HKCR,"MIME\Database\Content Type\application/x-iphone","Extension",2,".iii"
+HKCR,"ulsfile\DefaultIcon",,,"""%16422%\%NetMtgDir%\conf.exe"",1"
+HKCR,"h323file\DefaultIcon",,,"""%16422%\%NetMtgDir%\conf.exe"",1"
+HKCR,"iiifile\DefaultIcon",,2,"""%16422%\%NetMtgDir%\conf.exe"",1"
+HKCR,"ulsfile\shell\open\command",,,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+HKCR,"h323file\shell\open\command",,,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+HKCR,"iiifile\shell\open\command",,2,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+HKLM,"%KEY_CONFERENCING%\RRCM","NumSessions",1,1e,00,00,00
+HKLM,"%KEY_CONFERENCING%\RRCM","NumFreeSSRC",1,10,00,00,00
+HKLM,"%KEY_CONFERENCING%\RRCM","NumRTCPPostedBfr",1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\RRCM","RTCPrcvBfrSize",1,00,10,00,00
+HKCR,"Whiteboard",,,"%MSWBTYPE%"
+HKCR,".WHT",,,"Whiteboard"
+HKCR,"Whiteboard\DefaultIcon",,,"""%16422%\%NetMtgDir%\nmoldwb.dll"",-1"
+HKCR,"Whiteboard\shell\open\command",,,"""%16422%\%NetMtgDir%\wb32.exe"" ""%%1"""
+HKCR,"T126_Whiteboard",,,"%MST126WBTYPE%"
+HKCR,".NMW",,,"T126_Whiteboard"
+HKCR,"T126_Whiteboard\DefaultIcon",,,"""%16422%\%NetMtgDir%\nmwb.dll"",-1"
+HKCR,"T126_Whiteboard\shell\open\command",,,"""%16422%\%NetMtgDir%\wb32.exe"" - ""%%1"""
+[NetMtg.Install.ActiveSetup.NT]
+HKLM,%KEY_ACTIVE_SETUP_NT%,,,%PRODUCT_NAME_AND_VER%
+HKLM,%KEY_ACTIVE_SETUP_NT%,"ComponentID",,"NetMeeting"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"IsInstalled",1,01,00,00,00
+HKLM,%KEY_ACTIVE_SETUP_NT%,"Version",,"%VERSIONSTR%"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"Locale",,"%LOCALE_ID%"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"StubPath",,"rundll32.exe advpack.dll,LaunchINFSection %17%\msnetmtg.inf,NetMtg.Install.PerUser.NT"
+HKLM,%KEY_UNINSTALL%,"RequiresIESysFile",,"4.71"
+[NetMtg.Remove.ActiveSetup.NT]
+HKLM,%KEY_ACTIVE_SETUP_NT%,"IsInstalled",1,00,00,00,00
+HKLM,%KEY_ACTIVE_SETUP_NT%,"StubPath",,"rundll32.exe advpack.dll,LaunchINFSection %17%\msnetmtg.inf,NetMtg.Remove.PerUser.NT"
+[NetMtg.Install.Reg.PerUser]
+HKCU,AppEvents\Schemes\Apps\Conf,,,"%PRODUCT_NAME%"
+HKCU,AppEvents\Schemes\Apps\Conf\%ReceiveCall%\.Current,,,"%10%\Media\RingIn.wav"
+HKCU,AppEvents\Schemes\Apps\Conf\%ReceiveJoin%\.Current,,,"%10%\Media\RingIn.wav"
+HKCU,AppEvents\Schemes\Apps\Conf\%PersonJoins%\.Current,,,"%16422%\%NetMtgDir%\Blip.wav"
+HKCU,AppEvents\Schemes\Apps\Conf\%PersonLeaves%\.Current,,,"%16422%\%NetMtgDir%\Blip.wav"
+HKCU,"Software\Netscape\Netscape Navigator\Viewers","text/iuls",,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+HKCU,"Software\Netscape\Netscape Navigator\Viewers","text/h323",,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+HKCU,"Software\Netscape\Netscape Navigator\Viewers","application/x-iphone",2,"""rundll32.exe"" msconf.dll,NewMediaPhone %%l"
+[NetMtg.Install.Reg.NT]
+HKLM,"System\CurrentControlSet\Services\mnmdd","Start",65537,1,0,0,0
+HKCU,%KEY_ACTIVE_SETUP_NT%,"Locale",,"%LOCALE_ID%"
+HKCU,%KEY_ACTIVE_SETUP_NT%,"Version",,"%VERSIONSTR%"
+HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\Application",,,"mnmsrvc"
+HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\Application\mnmsrvc","EventMessageFile",,"%SystemRoot%\System32\nmevtmsg.dll"
+HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\Application\mnmsrvc","TypeSupported",1,07,00,00,00
+[NetMtg.CleanPrev.Reg]
+HKLM,Software\Microsoft\Windows\CurrentVersion\Run,"Microsoft NetMeeting"
+HKLM,%KEY_CONFERENCING%,"Run Always"
+HKCR,CLSID\{068B0701-718C-11d0-8B1A-00A0C91BC90E}
+HKLM,"SOFTWARE\Microsoft\Internet Audio\ACMH323Encodings"
+HKLM,"SOFTWARE\Microsoft\Internet Audio\VCMEncodings"
+HKLM,"%KEY_CONFERENCING%\CaptureDevices"
+HKLM,"%KEY_CONFERENCING%\CaptureDefaultFormats"
+HKLM, "%KEY_CONFERENCING%\Remote Control"
+HKLM,%KEY_UNINSTALL%
+HKLM,"%KEY_GUID%\{7BA58780-90C0-11CF-87BD-00AA003FEE93}"
+HKLM,"%KEY_GUID%\{340F3A60-7067-11D0-A041-444553540000}"
+HKLM,%KEY_TRANSPORTS%
+HKLM,"%KEY_CONFERENCING%\Data Control"
+HKLM,"%KEY_DCG%"
+HKLM,%KEY_MCAT%
+HKCR,CLSID\{53D22820-D7E8-11CF-AD0A-0080C7137C82}
+HKCR,TypeLib\{53D22821-D7E8-11CF-AD0A-0080C7137C82}
+HKCR,CLSID\{068B0901-718C-11D0-8B1A-00A0C91BC90E}
+HKCR,CLSID\{19FF8A00-9447-11cf-8796-444553540000}
+HKLM,Software\Microsoft\Exchange\Client\Extensions,"NetMeeting Extensions"
+HKLM,"%KEY_RDS%"
+[NetMtg.CleanPrev.Reg.PerUser]
+HKCU,"%KEY_CONFERENCING%\MRU"
+HKCU,"%KEY_CONFERENCING%\UI\Directory"
+HKCU,%KEY_CONFERENCING%,"RunWizard"
+HKCU,%KEY_CONFERENCING%,"WizardNoUI"
+HKCU,%KEY_CONFERENCING%,"WizardUI"
+HKCU,"SOFTWARE\Microsoft\Internet Audio"
+HKCU,Software\Microsoft\Windows\CurrentVersion\Run,"Microsoft NetMeeting"
+HKCU,%KEY_CONFERENCING%,"Run Always"
+HKCU,"%KEY_CONFERENCING%\Video Control\Remote","ImageQuality"
+[NetMtg.Remove.Reg]
+HKLM,%KEY_CONFERENCING%
+HKLM,%KEY_POLICIES%
+HKCR,CLSID\{085C06A0-3CAA-11d0-A00E-00A024A85A2C}
+HKCR,CLSID\{8ED14CC0-7A1F-11d0-92F6-00A0C922E6B2}
+HKCR,CLSID\{068B0800-718C-11d0-8B1A-00A0C91BC90E}
+HKCR,CLSID\{30E7F2A0-EC4C-11ce-8865-00805F742EF6}
+HKLM,"SOFTWARE\Microsoft\Internet Audio"
+HKCR,"Internet Audio"
+HKCR,".uls"
+HKCR,"ulsfile"
+HKCR,"MIME\Database\Content Type\text/iuls"
+HKCR,".323"
+HKCR,"h323file"
+HKCR,"MIME\Database\Content Type\text/h323"
+HKLM,%KEY_UNINSTALL%
+HKCR,"Whiteboard"
+HKCR,".WHT"
+HKCR,"T126_Whiteboard"
+HKCR,".NMW"
+HKCR,"Chat"
+HKCR,".cnf"
+HKCR,"ConferenceLink"
+HKCR,"callto"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Run,"Microsoft NetMeeting"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\App Paths\CONF.EXE"
+HKLM,Software\Microsoft\Windows\CurrentVersion\RunServices,"Run Service"
+HKLM,Software\Microsoft\Windows\CurrentVersion\RunServices,"Fpx"
+HKLM,"%KEY_CONFERENCING%\CaptureDevices"
+HKLM,"%KEY_CONFERENCING%\CaptureDefaultFormats"
+[NetMtg.Remove.Reg.PerUser]
+HKCU,%KEY_CONFERENCING%
+HKCU,%KEY_POLICIES%
+HKCU,"SOFTWARE\Microsoft\User Location Service"
+HKCU,"AppEvents\Schemes\Apps\Internet Audio"
+HKCU,"Software\Netscape\Netscape Navigator\Viewers","text/iuls"
+HKCU,"Software\Netscape\Netscape Navigator\Viewers","text/h323"
+HKCU,AppEvents\Schemes\Apps\Conf
+HKCU,Software\Microsoft\Windows\CurrentVersion\Run,"Microsoft NetMeeting"
+[NetMtg.Remove.Reg.NT]
+HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\Application\mnmsrvc"
+[NetMtg.Remove.AddReg.NT]
+[NetMtg.Install.Inis]
+system.ini, drivers32,,"msacm.lhacm=lhacm.acm"
+system.ini, drivers32,,"msacm.msg723=msg723.acm"
+system.ini, drivers32,,"msacm.msg711=msg711.acm"
+system.ini, drivers32,,"vidc.M263=msh263.drv"
+system.ini, drivers32,,"vidc.M261=msh261.drv"
+system.ini, drivers32,,"vidc.I420=msh263.drv"
+[NetMtg.Remove.Inis]
+system.ini, drivers32,"msacm.msg723=msg723.acm"
+system.ini, drivers32,"vidc.M263=msh263.drv"
+system.ini, drivers32,"vidc.M261=msh261.drv"
+[Strings]
+KEY_CONFERENCING = "SOFTWARE\Microsoft\Conferencing"
+KEY_POLICIES     = "SOFTWARE\Policies\Microsoft\Conferencing"
+KEY_TRANSPORTS   = "SOFTWARE\Microsoft\Conferencing\Transports"
+KEY_GUID         = "SOFTWARE\Microsoft\Conferencing\Applications"
+KEY_MCAT         = "SOFTWARE\Microsoft\Conferencing\MCAT"
+KEY_DCG          = "SOFTWARE\Microsoft\Conferencing\DCG"
+KEY_OPTIONAL     = "SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents"
+KEY_RDS          = "SOFTWARE\Microsoft\Conferencing\Mcpt"
+NMMANAGER_OBJECT3 = "Microsoft NetMeeting Manager Object 3"
+QOS              = "Microsoft NetMeeting Quality of Service"
+INSTALL_CODECS   = "Microsoft NetMeeting Installable Codecs"
+KEY_ACTIVE_SETUP_W95 = "SOFTWARE\Microsoft\Active Setup\Installed Components\{44BBA842-CC51-11CF-AAFA-00AA00B6015C}"
+KEY_ACTIVE_SETUP_NT  = "SOFTWARE\Microsoft\Active Setup\Installed Components\{44BBA842-CC51-11CF-AAFA-00AA00B6015B}"
+KEY_UNINSTALL    = "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NetMeeting"
+KEY_RUNONCE       = "SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
+VERSIONSTR       = "4,4,0,3385"
+NETMTGDIR      = "NetMeeting"
+PRODUCT_NAME            = "NetMeeting"
+PRODUCT_NAME_AND_VER    = "NetMeeting 3.01"
+MSIPTYPE         = "Internet Location Service"
+H323TYPE         = "H.323 Internet Telephony"
+IPHONETYPE       = "Intel IPhone Compatible"
+MSWBTYPE         = "Microsoft NetMeeting Old Whiteboard Document"
+MST126WBTYPE     = "Microsoft Netmeeting T126 Compatible Whiteboard Document"
+DISK1            = "NetMeeting Files"
+PGMGRP_NETMTG    = ""
+PGMGRP_IESUITE   = "Internet Explorer"
+PGMGRP_COMMUNICATIONS = "Accessories\Communications"
+PGMGRP_TOOLS = "Accessories\Internet Tools"
+PGMITEM_NETMTG   = "NetMeeting"
+PGMITEM_NETMTG_OLD = "Microsoft NetMeeting"
+PGMITEM_README   = "Microsoft NetMeeting Release Notes"
+ReceiveCall      = "Receive Call"
+ReceiveJoin      = "Receive Request to Join"
+PersonJoins      = "Person Joins"
+PersonLeaves     = "Person Leaves"
+ConfLnk          = "SpeedDial"
+NETMTG_INFO_TIP = "Establishes communication with others over the internet or an intranet using voice, video, application sharing, and data conferencing"
+LOCALE_ID = "EN"
+INSTALLPROMPT           = "This will install NetMeeting. Do you wish to continue?";    
+FINISHMESSAGE           = "NetMeeting has been installed successfully.";
+FILEDESC                = "NetMeeting Installation Program";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             MZ░       ЪЪ  ╦       @                                   ─   ╨ ╢	м!╦Lм!This program cannot be run in DOS mode.
+$       PE  L X≥C8    2  Ю #
+ R   h     юR      p    >u                    П    bй                        ]  +  .T  x    ░  └K                  Ю Т  ╟  8                                     ■      ╗                          .text   +P      R          ю   >   `.data   0   p   
+   b              @  ю.rsrc   └K  ░   L  l              @  @.reloc  Х   Ю     ╦             @  BСPк1@  'бР7M   4пD8X  0[8e   4пD8o   4пD8z   └с+8┤           MSVCRT40.dll msvcrt.DLL KERNEL32.dll NTDLL.DLL USER32.dll ADVAPI32.dll GDI32.dll                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        b▐шw▒шw▒шwM}шw└чшwT■шw╛┌шw▌┘шw    M│Тw▒EТwK3ТwЗ3Тw▌SТwоGТwФoТw-Тw╔\ТwО$Тw    шVИw9~Хw°IИw█ХwIИwD║ИwЮwЬw*`Хw}╙ЬwL╙ЬwJИw4sИw╡5Иw▄fХwx▀Хwх╕ХwJИwпХwрХw╢
+ИwВtИwx┤ХwKVИw▄╚Иw#─Иw▀^Иw┤бИw▒ИwжФИwЭ^Иw    jУ xp╩xМ xЙ x  xwxEkxО x1┘x╦ xэ(xБ  xн'x|-xйSx    ┼fАwEcАwх═Аw╖АwБjАw╒ЦwТkАwa\АwнiАwЪeАwФkАw?xАw╣=Бw┘iАwb<Бwв=Бw|╔Аw┴<БwЯeАw╗bАwTKАwИdАwк3Цwb^Цw╝▄Цw╩3БwNmАw0oАwrYАwHАwТGАwNеАwdwАw╨{Цwй[Аw─YАwЛfАw{\Аw                ЭJк5              ю     ЭJк5              а     ЭJк5              ┬/     ЭJк5              юЕ╬ЪMSN SSPI Provider for Client    BmpCC   ЪЪЪЪ    P>u    advapi32.dll    none    MSN Security Package    MSN M S N   S e c u r i t y   P a c k a g e     M S N   NTLMSSP , %s    msnssps.dll msnsspc.dll SecurityProviders   SYSTEM\CurrentControlSet\Control\SecurityProviders  ЪЪЪЪЪЪЪЪKGS!@#$%    MsnSspcPrivatePwdMutex  SicilyMsnPwdSharedMemory    S i c S S P C S e c r e t   LsaStorePrivateData LsaFreeMemory   LsaRetrievePrivateData  LsaClose    LsaOpenPolicy   WNetGetCachedPassword   WNetCachePassword   MPR.DLL ADVAPI32.DLL    msnauth.hlp>overview    Software\Microsoft\Mos\Connection   UserInfo    msnauth.hlp ZP>uуP>u    U▀Л┐Л(V▀E3Ж┴EХ┴uЮ┴uЛгEь#H  гEэ>uгEД   h   VЪ▄>u┴EП┴uТ█Eь┴uЬгEЭ@>uPЪ░>uf= ^ю▀Е@]б Ъt$h@>uЪ┬>u┐Ью@б U▀D$▀Л┐Лd┐ЬSгEЭ    VWt2┐Ь└╕   ┐Ь└г   =  └]  ЪuЪuPЪuЪ@>uИ╣  ▀}h   j@Ъ`>u▀П┘Жu
+╦ЪЪЪЪИ∙  ▀_$─;<u$C█Mэ─;>t┼C┬A─;>uУC█EэPф ЪP>uК▀GS┴F█FPЪT>u▀G VЪu┴FХR  Vj ЪuЪx>uИ5  j ЪuЪ■>u▀П┘Ж└   ЪvЪ(>uVЪX>uИ  3ЪWЪuЪ■>u▀ь█E°PЪuЪ|>uЪu°ЪH>u▀П▀C┘юt&WPЪu°ЪD>uЪu°Ъ0>uWЪsVЪD>uVЪ0>uЪsVЪ@>u█MДQjЪsЪ,>uh  л j j VЪuЛЪuХЪsЪsЪu°Ъ8>uVЪ4>u█M°QЪuЪ≤>uКjj ЪuЪ■>u┐x ▀ПtWЪuЪ─>u▀Ьj ЪvWЪD>u▀ьWЪ0>u▀ПjSWЪD>uWЪuЪ└>u┘Жtjj ЪuЪ═>uЪuЪ°>uгEЭ   ▀EЭ_^[▀Е]б U▀Л│Л0  SVW▀u3Ъ█^▀┘юt	PЪ(>u┴;▀F3Ъ┘юt
+PЪ(>u┴~╦    г    ЖFu╦ 0  P3ЪW█NWWQЪvЪh>u┴┘ю└щ   █MтQjPЪ,>u█MЛQЪuЪ`>u▀EТ+Eь+EЛ≥+бяЬ┴F▀х▀EЬ+Eэ+EП≥+бяЬ┘и┴F}┴~3и┘ю}┴Nj ЪH>uЪ3P▀ЬЪ@>u▀ь█┘тШЪЪPh   j WЪ<>uf┘юtKfг┘пШЪЪ f┴┘рШЪЪv)╥п██тШЪЪ▀┴EЭ┼EЧ┬┼EЩ┬A┐а┼EЭJ┬AЧфAЪ uЮ█┘пШЪЪPЪ$>u┴FSWЪ@>uWЪ4>uг   ▀_^[▀Е]б U▀D$▀Л┐ЬSt┐Ь{tК!Ъuj▀UЪuЪrКЪuj
+ЪuЪuЪd>u]б U▀Л┐Л0VW▀uVЪ>u▀Ь┘ЪtWЪ0>u┘юuVЪ>u┘юuЪ,>u▀Ь█EпPWЪ`>u█MЮQVЪ`>u█Mп█EПQPЪX>u▀EД█MЮВьP▀=\>u▀EЮВьPQЪв▀EТ█MПВьP▀EПВьPQЪв▀EЛ█MПВьP▀EХВьPQЪвj3ЪW▀EЭW▀Mт≥+бяЬх▀EЬ≥Q+бяЬ▀MпхQWVЪT>u_^▀Е]б V║p>uаЮЪp>u┐=p>u█╟ ~>u|
+гp>u    ╥D$h   VPЪt$Ъ>u┘юuф ▀ф^б d║    U▀ЛjЪhH>uhpS>uPd┴%    ┐ЛSVW3Ж┴uЮ┴uД┴uь┴uЭ█EЮPh  VЪuЪuЪ>u┘юuN█EэPVVVЪuЪuЮЪ>u┘юu79uэt2Ъuэj@Ъ`>u┴EД;фt █EэPЪuДVVЪuЪuЮЪ>u┘юuгEь   гEЭЪЪЪЪhm>uЪuЮЪ>u3Ж9uьuЪuДЪX>u┴uДц▀EД▀MПd┴    _^[▀Е]б Ъt$Ъt$Ъt$h  ─ХЪЪЪб U▀Л┐ЛS█EЭV3шW╬?  P©  ─VSЪuWЪ>u┘юt#█EЬ█MЭPQSVShT>uSЪuWЪ >u┘юt3юК!▀u┘Жu#ЪuЪuЭЪ>uЪuЭЪ>u╦   _^[▀Е]б ▀E┘юu"VЪ|>u@PVjj ЪuЪuЭЪ>u┘юtд3юКнPVjj ЪuЪuЭЪ>u┘юt╙3юК╢U▀Л│Л≤   гEЭ   г┘hЪЪЪ■   █┘hЪЪЪPЪd>u┘юu3юКx┐╫xЪЪЪt┐╫xЪЪЪt3юКb▀┘xЪЪЪ█MЭQё~>ufгй}>u ╦~>uPёл}>uЪ─>u┘ю╦    t0▀EЭЪ5л}>ufёх}>uЪ>uhп}>uЪ\>uh╟}>uЪ\>u╦   ▀Е]ц┐=p>uuХп#  гp>u    hп}>uЪh>uh╟}>uЪh>u┐=u>u}║~>uPХ╛ЬЪЪ╦   цhП}>uЪ\>u┐=p>u uХТЧЪЪ┘юu3юКгp>u   ╦   ц┐ЛVW╬X>u█|$╔╔╔╓ХpЪЪЪhП}>uЪh>u╦   _^┐дц▀D$V┘юt┐Ьt╦   К%Х╧ЪЪЪК▀t$VЪl>u;5~>ut┴5~>uХhЪЪЪ^б ╥х}>uV@▀t$WPХ╝  ▀п┴F╟ ┘рt'▀=л}>u╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀х┐АС╓╟_^б U▀Л│Л≤   ┐=p>u гEЭ   u.hП}>uЪt>u┐=p>u uХM"  гp>u   hП}>uЪp>u┐=p>u ┘·   г┘hЪЪЪ■   █┘hЪЪЪPЪd>u┘юu3юИ│   ┐╫xЪЪЪt┐╫xЪЪЪt3юКk▀┘xЪЪЪ█MЭQё~>ufгй}>u ╦~>uPёл}>uЪ─>u┘юu3юК:▀EЭЪ5л}>ufёх}>uЪ>uhп}>uЪ\>uh╟}>uЪ\>uгp>u   ╦ p>u▀Е]цU▀Л│Л≤   ┐=p>u гEЭ   u.hП}>uЪt>u┐=p>u uХR!  гp>u   hП}>uЪp>u┐=p>u ┘·   г┘hЪЪЪ■   █┘hЪЪЪPЪd>u┘юu3юИ│   ┐╫xЪЪЪt┐╫xЪЪЪt3юКk▀┘xЪЪЪ█MЭQё~>ufгй}>u ╦~>uPёл}>uЪ─>u┘юu3юК:▀EЭЪ5л}>ufёх}>uЪ>uhп}>uЪ\>uh╟}>uЪ\>uгp>u   ╦┬p>u▀Е]цVW3Ъ▀t$;ВtPVЪ|>u┐Ь~D╬Nи┼>2я─Б2яи┬>G┐Ъ|К┐Ь~ ╬Fю┐Ъ}┼>2х─А2хю┬>G┐Ъ|КфF _^б U▀Л┐Л$SVW▀]▀┘ю└Е  ┐{ └ш  PЪ|>u┐Ь@▐к  ▀E▀U┐ю┐б┴EП┴UТг     г    ▀E▀U┐ю┐б╧ЪЪЪЪ┴EЭг     ┴UЬ+юг    ▀;Р╝ВяQХ║  ▀MП▀п┘р┴└  ▀;╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀х┐АС╓▀{╧ЪЪЪЪ+юР╝ВяQХ]  ▀MТ▀п┘р┴└й   ▀{╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀х┐АС╓ЪuХbЭЪЪ└юujХ  ▀MЬ▀Ь┘Ъ┴└├   ╬h>u╔╓▀C╬    ┘юt	PЪ|>u▀П┐ЧejХБ  ▀MЭ┘ю┴tU┘ЖuфEэ К0▀{╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В█}эС╔▀х┐АС╓█MэQЪЛ>u┐д█EэPХЧЪЪ▀MЭ█UэЪ1RХf  3юКd▀MП3Ж▀┘юtPХ┌  ▀MП┴1▀MТ3Ж▀┘юtPХl  ▀MТ┴1▀MЬ3Ж▀┘юtPХV  ▀MЬ┴1▀MЭ3Ж▀┘юtPХ@  ▀MЭ┴1╦ 	─К╦	─_^[▀Е]б U▀T$▀Л┐Л▀SV┘юW└─  ┐z └v  PЪХ>u┐д┐Ь@┤c  ▀]3Ж▀U┴s┴s┴s┴sЪ2ЪХ>u┐д▀Ь█@PХ╧  ▀х┴C┘и└щ   G▀UWЪ2QЪД>u┐д▀UЪrЪХ>u┐д▀Ь█@PХ│  ▀х┴C┘и└╔   G▀UWЪrQЪД>u┐дSХ ЗЪЪ└юujХQ  ▀Ь┴C┘Ъty╬h>u╔╓▀U╬    ▀B┘юtPЪХ>u┐д▀П┐ЧRjХ  ┴C┘юtD┘ЖuфEЛ К!V▀U█MЛЪrQЪД>u┐д█MЛQЪЛ>u┐д█EЛPХ^ЭЪЪЪs█MЛQХ╠  3юКT▀C3Ж┘юt	PХо  ┴s▀C3Ж┘юt	PХ╫  ┴s▀C3Ж┘юt	PХ╚  ┴s▀C3Ж┘юt	PХ≥  ┴s╦ 	─К╦	─_^[▀Е]б ▀D$SV┘юWUu
+╦	─Иэ   ╧┬>u┼:u
+рt┼P:Qu┐ю┐а
+рuД3юКю┐ьЪ┘юt
+╦	─И╓   j-Х  ▀T$┘ю┴u
+╦ 	─И┴   г 7   ▀fг@ ▀©┬>ufг@ ▀╫ЪЪЪЪг@   ▀▀м█X┴X+юР╝Вя+Ы▀ааИ▀В▀ШС╔▀х┐АС╓▀Ш▀м+юР╝▀©p>uВяы▀м┴X+юР╝Вя+Ы▀яаИ▀В▀ШС╔▀й┐АС╓▀Ш▀м+юР╝3ю]_^[б ▀D$VW┘юu
+╦	─И√   h╦>uPЪП>u┐д┘юt╦	─К|jFХD  ▀t$┘ю┴u╦ 	─Кdг 7   ▀fг@ ▀h╦>ufг@ ▀г@   ▀█xW┴xЪЬ>u┐дWЪХ>u┐д█|G▀h▄>uW┴xЪЬ>u┐дWЪХ>u┐д3ю_^б Ъt$h┬>uХJЧЪЪ┘юu▀D$г    3юб Ъt$h╦>uХ"ЪЪЪ┘юu▀D$г    3юб ┐=p>u U▀ЛVWu.hП}>uЪt>u┐=p>u uХi  гp>u   hП}>uЪp>uЖEt▀E┘юt─8 t
+╦	─И┘   ┐} t╦	─Кx┐} t╦	─Кk┐}  t╦	─К^ЪuХ5  ▀П┘Жu© 	─К9▀E3и┘юu┴N┴N┴N┴NКVPХ╤ЫЪЪ▀Ь┘ЪuЪvЪvХЖ  ▀E$3Ъ┴p┴8┘Ъt
+┘ЖtVХ:  ▀г_^]б$ ┐=p>u U▀ЛVWu.hП}>uЪt>u┐=p>u uХ├  гp>u   hП}>uЪp>uЖEt▀E┘юtf┐8 t
+╦	─И┘   ┐} t╦	─Кx┐} t╦	─Кk┐}  t╦	─К^ЪuХQ  ▀П┘Жu© 	─К9▀E3и┘юu┴N┴N┴N┴NКVPХшЗЪЪ▀Ь┘ЪuЪvЪvХ  ▀E$3Ъ┴p┴8┘Ъt
+┘ЖtVХV  ▀г_^]б$ U▀T$▀Л┘рSu╦	─Кg▀б╧┬>u┼:u
+шt┼X:Yu┐ю┐а
+шuД3юКю┐ьЪ┘юt╦	─К0▀MЖаt#ЖаuЪu(Ъu$Ъu ЪuЪuЪuQRЪuХфЩЪЪК╦	─[]б$ U▀ЛV▀u┘Жu╦	─КCh╦>uVЪП>u┐д┘юt╦	─К)ЖE╦	─tЪu(Ъu$Ъu ЪuЪuЪuЪuVЪuХHЧЪЪ^]б$ VjЪt$Х8  ▀П╦	─┘ЖtVХX  VХR  3ю^б U3и▀ЛV▀E┘юu▀E▀U┴╟┴
+К(┐8 u!3и▀p;Яt▀P▀B%ЪЪЪ┐Ьt┐бA;нrК2ю^]б ─} uЖB─uМ▀J▀E▀u┴╟┴КчU╧ЪЪЪЪ▀Л┐Л+юVW▀}Р╝ВяI┐Ы~╦ 	─КQ┘иuфEЛ К0▀}╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В█}ЛС╔▀х┐АС╓█MЛQЪЛ>u┐д█EЛPХsЖЪЪЪu█MЛQХф  3ю_^▀Е]б U▀ЛSVW▀}WЪ|>u┐Ь@~
+╦	─И  ▀]▀C┘юtPХ╬  WЪ|>u@PХ║  ▀п┴C┘р└⌡   ╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀хh┬>u┐АС╓█{Ъ|>u▀П▀┘юtPЪ|>u;фtЪ7Х\  г    ┐? uFVХ;  ┴┘юt<╬┬>u▀?╔█s┐> ujХ  ┴┘юt▀>▀u╔╔╔╔▀C3Ж┘юt	PХ  ┴s3юКM▀C3Ж┘юt	PХЫ  ┴s▀C3Ж┘юt	PХГ  ┴s▀C3Ж┘юt	PХу  ┴s▀C3Ж┘юt	PХц  ┴s╦ 	─_^[]б U▀Л│Л▄   S▀E$VW3ЖV┴uЭЪu┴0ХБ  ▀ь┘шu
+╬	─И╠  ЖCu
+╬	─И║  ▀u┐Ф@tЖE─ta╬	─И┴  ЖE─tQ▀C┘юu┐{ u
+╬	─Иl  ЪsPХY  ┘Ж└▐   █╫tЪЪЪ3ю╧   С╚█┘tЪЪЪPХ  ┘юu.╬	─И2  ┘Жuс┐{ uе┐{ u©SХИ  ┘юu╣╬	─И  █E╣█MлPQХlЩЪЪ▀П┘Ж┘В   █Eл██tЪЪЪPQХщ  █Mл█∙tЪЪЪQRSХ╫ЩЪЪ▀П┘Ж┘л   ХY  ┴EЭ┘юu
+╬ 	─И╤   ▀E▀MЭЖE┴Hг     t
+╬	─И≈   ╬ю>u█}э╔╔гEД   гEХ┌  ┐{ uгEХ┌  ▀E┐8 s╬ 	─КcЖEt▀MЭ─I ─MХ░ЖEt▀MЭ─I  ─MХ═█uэ▀} ╧   jС╔ЪuЭг     Х  ▀M(j Ъu╬	 ┴┴QХ.  ▀MЭ┴A0гA$   ┐}Э t│Ч	 tЪuЭХ&  ┘шtSХ2  ▀ф_^[▀Е]б$ U▀Л│Л─   S▀E(V3шW┴]ЬS┴ЪuХД  ┴EЭ;цu
+╬	─И  ▀MЭ▀A$┐Ьu^┐} ┘Й  ┐} ┘Ю  ▀E ┐84s
+╬ 	─Ис  ╬ю>u█}╟3ю╧
+   ╔╔гE╦   █}╪С╚▀E █u╟▀}$╧   г 4   С╔И▓  ┐Ьt
+╬	─И▄  ▀EЖдt
+╬	─Иz  ╗t▀MЭ─I ╗t▀MЭ─I  ▀MЭЪq0Х3  ┴EЬ┘юu
+╬	─ИH  ┐}(┌9  │}≤  ┤,  jhю>uЪuЪТ>u┐д┘ю┘  ▀E┐x┘  ▀@╗┘Ы  ╨ ─  ┘бt▀MЭ	Q ▀E▀@Ждt	Жд└ж  ▀MЭЖA 0t╗─└е  ▀EЬ┐ю┴EП┐8 uQ▀E┐ю┴EЮ╥ @PХ  ▀MП▀Ь┘Ъ┴u
+╬ 	─И■  ▀EЮ╥▀p▀йаИuС╔▀й┐АС╓▀EЮ▀MП╥▀ф █E≤▀MЬP▀EЪq┐юPХ[  ┘юu
+╬ 	─ИG  ▀MПгEЮL   ▀9┘Ъt╧ЪЪЪЪ+юР╝Вя┐аK┴MЮ▀EЬ▀x┘Ъt╧ЪЪЪЪ+юР╝▀UЮВя█DЪ┴EЮ▀EЬ▀x┘Ъt╧ЪЪЪЪ+юР╝▀UЮВя█DЪ┴EЮ▀E ▀UЮ9s
+╬ 	─Ит  ЪuЮХ2  ▀ь┘шu
+╬ 	─И╪  ╬ю>u▀Ш╔╔█C4█M≤гC   █S┴EТ█EТPjQRSХ  █MТ█CQj j PSХ  ▀MП█EТP▀┘рt▀З╧ЪЪЪЪ+юР╝ВяI█CQRPКj █Kj QSХя  ▀EЬ▀P█EТP┘рt▀З╧ЪЪЪЪ+юР╝ВяI█C$QRPКj █K$j QSХ÷  ▀EЬ▀P█EТP┘рt▀З╧ЪЪЪЪ+юР╝ВяI█C,QRPКj █K,j QS▀СХk  ▀EЮ▀}$▀хаИС╔▀х┐АС╓▀M ▀EЮ▀UЭ┴ЖB 0└╔   █}Д▀EЬ▀p╦╫╫╫╫╔█M─█UД╔█}ЛQ╚╚R█E≤PХ═  ┘юu
+╬ 	─И▄   █u─█}э╔╓▀}Эh  фEАЕфEБ8фEЦ╟┐г<Хн  ┘ю┴u╬ 	─К[▀uЭh  ┐ф@Х╠  ┘ю┴u╬ 	─К>█MэQjPЪ└>u▀?▀6╧  С╓3ю▀MЭ┴A4┴A8jЪuЭХ░  ▀M,┴┴Q3ЖК╬	─┐}Э t▀MЭ┘Жu	гA$   КгA$    ЪuЭХ╦  ┘шtSХF  ┐}Ь tЪuЬХ╤  ▀ф_^[▀Е]б( U▀Л┐Лj█EЭP█MЬQЪu ХGВЪЪ└юu
+╦	─И√   3ю9EЭu	█MЛ┴EЛ┴MЭj █EТP█MПQЪu,ХВЪЪ└юu╦	─Кi▀E┘юu1┐} u╦	─КUЪu4Ъu0ЪuПЪuТ▀UЭЪuЬЪ2ЪuЪu(ЪuХПЬЪЪК1▀▀M(Ъu4Ъu0ЪuПЪuТ▀@┴┴A▀MЭЪuЬЪ1ЪuЪu(Ъuj ХхЗЪЪ▀Е]б0 U▀Л┐Лj█EЭP█MЬQЪu Х┘ЖЪЪ└юu
+╦	─И√   3ю9EЭu	█MЛ┴EЛ┴MЭj █EТP█MПQЪu,ХUЖЪЪ└юu╦	─Кi▀E┘юu1┐} u╦	─КUЪu4Ъu0ЪuПЪuТ▀UЭЪuЬЪ2ЪuЪu(ЪuХ.ЬЪЪК1▀▀M(Ъu4Ъu0ЪuПЪuТ▀@┴┴A▀MЭЪuЬЪ1ЪuЪu(Ъuj ХЗЪЪ▀Е]б0 U▀Л┐Л$гEЭ    SVWj ЪuХИ	  ▀ь┘шuгEЭ	─И╒   ▀E┘юt┐ЬtR┐ЬtkгEЭ	─И┘   гEЛ   ВC 0─  гEП   uгEП    ЖC  tгEТ   гEЬ   К3ю┴EТ┴EЬ█uЛК=jХ		  ▀M┘ю┴u	гEЭ 	─К+ф  К&j SХ
+  j┴EэS█uэ┴UЮХР	  ┴EД┴UХ▀}╔╔╔╔┘шtSХ9	  ▀EЭ_^[▀Е]б U▀Л┐Л$гEЭ    SVWj ЪuХ	  ▀ь┘шuгEЭ	─И╓   ▀E┘юt┐ЬtR┐ЬtmгEЭ	─И┤   гEЛ   ВC 0─  гEП   uгEП    ЖC  tгEТ   гEЬ   К3ю┴EТ┴EЬ█uЛК?jХ%  ▀M┘ю┴u	гEЭ 	─К-fг   К&j SХ	  j┴EэS█uэ┴UЮХ	  ┴EД┴UХ▀}╔╔╔╔┘шtSХS  ▀EЭ_^[▀Е]б VWjЪt$Х,  ▀Ь▀@0┘юtPХA	  ╬	─┘ЪгG0    tW3ЖХ  ┘ЪtWХ	  ▀ф_^б Ъt$Х▒  3юб ╦	─б ▀T$▀D$┐бRЪpЪ0Ъ2ХБ
+  б ┐ЛSVWUj Ъt$ Х╠  ▀ь┘ш└  ┐{@ u
+ЖC!─└  3р▀t$$гD$ЪЪЪЪ▀N;йt▀F┐ю─8t
+┐юB;яrСК┴T$┐|$ЪuSХj  ╦	─Иа   ▀F▀L$kиЖC ▀lu▀Щ3ю╚╚╚╚SгE    Х7  3юИ▒   гEЪЪЪЪ3Ъ9~v+┴|$▀NL$▀A<u╘   ─uUQХЪЪЪ┐D$G9~wы█{DWЪt>u▀EВп┴E▀K4┴MЪC4гE    ┐еUjЪs@Ъ┬>u▀F▀L$kиWг   Ъp>uSХ╗  3юК╦	─]_^[┐дб U▀Л┐ЛSVWj ЪuХt  ▀Ь┘Ъ└C  ┐< u
+ЖG!─└3  ▀u╨ЪЪЪЪ3ю▀N;хt▀^┐ц─;t
+┐ц@;аrСК▀п┐ЗЪuWХ5  ╦	─ИШ   kр▀FЖG ▀\uBWХ  █}Х3ю█uХ╧   ╚╚╚╚▀Ш+югEХ   С╕tю┐ьЪ┘ю╦    └Ё   ╦	─И╘   гEПЪЪЪЪгEЭ    ┘иt4гEЬ    ▀NMЬ▀A<u╘   ─u
+█EХPQХ╤ЩЪЪ┐EЬЪEЭ▀EЭ9Fwс█wDVЪt>u▀EП█SВпR┴EП▀O8j┴MТЪG8Ъw<Ъ┬>uVЪp>uWХ\  ▀EП9Ct╦	─К▀C+EТ┐Ь╦    ┐пЪ%	─К╦	─_^[▀Е]б ┐ЛSVWU3ЪWЪt$ Х  ▀П┘Ж└  9~@└З   ▀l$$гD$ЪЪЪЪ▀M;оt▀E┐ю─8t
+┐юG;оwСК┴|$┐|$ЪuVХх  ╦	─И╪   ▀E▀L$kи▀|█FDPЪt>uгGЪЪЪЪгD$    ┐} v?3ш▀Mк▀A<u!╘   ─uWQХ┴ЭЪЪ▀EцЪpЪ0Ъv@Ъ┬>u┐цЪD$▀D$9Ewц▀GВп┴G▀N4┴OЪF4г   ┐гWjЪv@Ъ┬>u▀E▀L$kиг   █FDPЪp>uVХ  3юК╦	─]_^[┐дб U▀Л┐ЛSVW3ЪWЪuХж  ▀ь┘ш└  9{<└  ╧ЪЪЪЪ▀u▀F;гt▀V┐б─:t
+┐бG;ЬrСК▀о┐ЫЪuSХ═  ╦	─Ил   ▀Fkи▀|█CDPЪt>uгEПЪЪЪЪгEЬ    ┐~ vHгEЭ    ▀NMЭ▀A<u%╘   ─uЪqЪ1Ъs<Ъ┬>u█MХ▀FQEЭPХIШЪЪ┐EЭЪEЬ▀EЬ9Fw©▀EП█WВпR┴EП▀K8j┴MТЪC8Ъs<Ъ┬>u█CDPЪp>uSХЖ  ▀MТ9Ot╦	─К▀G+EП┐Ь╦    ┐пЪ%	─К╦	─_^[▀Е]б ╦	─б U▀Л│Лю   ╧   SVW╬Э>u█╫@ЪЪЪС╔f╔╓╬Х>u█}д╔╔╔╔f╔╬э>u█}Л╔╔╔╬п>u█}э╔█EЭ3ш╔╔P╬?  V█┘@ЪЪЪS©  ─PWЪ>u┘юt*█Eь█MЭPQS█∙@ЪЪЪVShT>uSRWЪ >u┘юt3юИi  █EХ██tЪЪЪP█UЬQ█EдгEХP   гEЬ   R█}Лj PЪuЭЪ>u╧ЪЪЪЪ┘ю┘с   +ю█²tЪЪЪР╝Вя█qЪ─; uC─; tЗV█EЛPSЪ >u┐д┘юt~█}э╧ЪЪЪЪ+юР╝ВяI█EэQPSЪ >u┐д┘юtlj,SЪЭ>u┐д┘юt█X┘юu╘█╫tЪЪЪ╧ЪЪЪЪ+юР╝ВяI┘и~O─╪sЪЪЪ uI┘иЯ┘и~<█EЛ█▄tЪЪЪPhх>uQЪ>u┐дКFЪuЭЪ>u╦   КrЪuЭЪ>u╦   Кb█}Л╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В█╫tЪЪЪС╔▀х┐АС╓█╫tЪЪЪ╧ЪЪЪЪ+юР╝╬   █┘tЪЪЪ█Uд┴uЬВяQPVj RЪuЭЪ>uЪuЭЪ>u▀ф_^[▀Е]б ┐=p>uu.hП}>uЪt>u┐=p>uuХS  гp>u    hП}>uЪp>u╦   цЪt$j Ъ`>uб Ъt$ЪX>uб U▀ЛVW▀u┘Жt▀E▀U▀х▀:аИС╔▀х┐АС╓К▀Uf▀E▀Mf┴A_f┴^▀+E┴A▀M]
+б 3ю3рц▀D$▀@fЪ@б VW▀t$©    f▀FfHf┴Fu:▀F0┘юt	PХР   ┴~0▀F<┘юtPХdЪЪЪ▀F@┘юtPХWЪЪЪ█FDPЪh>uVХGЪЪЪ_^б VWj`Х*ЪЪЪ▀Ь┘Ъu3юК63Ж┴7fгG ┴w ┴w$ХoЪЪЪ█O┴█GDP┴QгGют ┴w<┴w@Ъ\>u▀г_^ц┐Л3юW█|$╚╚▀D$▀T$_┐дб j ХеЧЪЪ┘юu3юКг@   ▀L$┴H3и┴H┴Hб ▀D$V▀p█NQЪx>u▀ф^б V▀t$┘Жt
+█FPЪx>u▀ф^б V▀t$█FPЪ░>u┘юu:▀F┘юtPХbЧЪЪ▀F┘юtPХUЧЪЪ▀F┘юtPХHЧЪЪ▀F┘юtPХ;ЧЪЪVХ5ЧЪЪ^б U▀Л┐ЛVW╬8>u█}Д╔╔╓█}П▀E─8 t█MЧ;Ыs┼@┬G─8 uН█EЧ;Ьs▀п3ю+в▀йаИС╚▀й┐АС╙©п}>uWЪt>u▀u█EДV█MПPQjХ  ┐д┘юtWЪp>u3юК>┐ф█EДV█MВPQjХЯ  ┐д┘юhп}>ut
+Ъp>u3юК█}ПЪp>u3ю╚╚╚f╚╦   _^▀Е]б U▀Л┐ЛSVW©п}>uWЪt>u▀]▀uSЪuVjХ≈  ┐д┘юtWЪp>u3юИ═   █C█VPЪuRjХp  ┐д┘юhп}>ut
+Ъp>u3юКx█}ЬЪp>u█F┐ф;фs
+┼@┬G;фrЖ█EЪ;Ьs▀п3ю+в▀йаИС╚▀й┐АС╙╬п}>u┐цVЪt>uS█MЬЪuQjХ  ┐д┘юtVЪp>u3юКhп}>uЪp>u╦   _^[▀Е]б U▀T$▀Л▀бVJ▀u▀M┘юt┼F2а╤юаИ▀┘Пp>u3а▀х▀бJ┘юuЦ▀E^]┴б VWj╬╦x>uVЪ>u┘юt.3ЪWWjVЪ>u┘юt╦пx>u┴5тx>uгпx>u   ┴=ьx>uК3ю_^ц┐=Ьt>u u&Х╚ЪЪЪ┘юthD>uj PЪ┬>uёЬt>u┘юuЪ%└>uцV║Пt>u3Ж┘юtPЪд>u┴5Пt>u║Тt>u3Ж┘юtPЪ▄>u┴5Тt>u║Ьt>u3Ж┘юtPЪ▄>u┴5Ьt>u^цSVW2ш┐=Ьt>u uХrЪЪЪ┐=Тt>u uOh\>uj h  Ъ°>uёТt>u┐=Тt>u u/─|$ u3юКah\>u3ЖjQVjVjЪЪ≤>uёТt>u;фu3юК?ЁjQ3ЖV║Тt>uVh  PЪ■>uёПt>u;фu3юК└шt▀=Пt>u3ю╧   С╚╙║Пt>u_^[б U║Ьt>u▀Л┘юSVWu3юИ╨   jЪPЪ╓>u┐ЬЪu3юИ╔   ▀Пt>u┘рu!jХЪЪЪ▀Пt>u┘юu║Ьt>uPЪ═>u3юКz▀б▀M┼:u
+шt┼X:Yu┐ю┐а
+шuД3юКю┐ьЪ┘юt"▀}╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀х┐АС╓█rA╧   ▀}С╕t
+█zA▀u╔╔╔╔║Ьt>uPЪ═>u╦   _^[]б U▀Л┐ЛX┐=Ьt>u фEЪ SVWu3юИ(  ┐=Пt>u uj ХNЧЪЪ┘юu3юИ  jЪ║Ьt>uPЪ╓>u┐ЬЪu3юИС   ║Пt>u─8 u║Ьt>uPЪ═>u3юИж   ▀=Пt>u╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В█}╗С╔▀х┐АС╓▀5Пt>u█}Л┐фA╔╔╔╔Ъ5Ьt>uЪ═>u▀]┐{ ujХ7ЫЪЪ┴C┘юu3юКyфEЪ█s▀┘юtPХ(ЫЪЪ█}╗╧ЪЪЪЪ+юР╝ВяQХЫЪЪ▀п┴┘рu─}Ъ tЪsХЧЬЪЪгC    3юК1█}╗╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀ЗС╔▀х┐АС╓█uЛ▀{╔╔╔╔╦   _^[▀Е]б U▀Л┐ЛSVW2ш┐=Ьt>u u3юИА   ▀}┘Ъt─? u"┐} u"ЁjЪ║Ьt>uPЪ╓>u┐ЬЪu$3юИЁ   ┐} tЮЪu█MПQХУДЪЪ┘юtп3юИ√   └шt┐=Пt>u tx▀=Пt>u3ю╧   С╚╙Кf┐=Пt>u ujХ≤ЭЪЪ┘юu║Ьt>uPЪ═>u3юКS┘Ъt(─? t#╧ЪЪЪЪ+юР╝Вя+Ы▀ааИ▀В▀=Пt>uС╔▀х┐АС╓┐} t█uП▀=Пt>u┐гA╔╔╔╔║Ьt>uPЪ═>u╦   _^[▀Е]б U3ю▀Л┐Л,9u>uSV┴EЬW└м  hэ>u║u>uPЪ╗>u▀П┘Ж└╟  hп>u║u>uPЪ╗>u▀ь┘ш└∙  ▀E┘ю┘  h╦>u║u>uPЪ╗>u▀Ь┘Ъ└o  h╗>u║u>uPЪ╗>u┴EТ┘ю└S  гEэ   3и█EЭ┴MЮ┴MХP█UэhЪ ┴MДR┴MЛQ┴MПЪж┘ю▄┘   █EЬPh u>uЪuЭЪв┘ю} ▀U▀}3ю▀йаИС╚▀й┐АС╙ЪuЭЪсИЯ   ▀EЬ╥9U~#▀}▀p▀йаИС╔▀й┐АС╓▀EЬ▀M╥ф
+ К▀U▀EЬ▀}▀йаИ▀pС╔▀й┐АС╓ЪuЬЪUТИ▓   ▀U▀}3ю▀йаИС╚▀й┐АС╙И┘   ┐Ьu~h■>u║u>uPЪ╗>u▀Ь┘Ъtg▀MQ┴MьЪ|>uf▀MгEэ   f┴Eтf┴Mж3и█EЭ┴MЮP┴MХj █UэR┴MДQ┴MЛ┴MПЪж┘ю|%█EтPh u>uЪuЭЪв┘ю}ЪuЭЪсКЪuЭЪс╦   К3ю_^[▀Е]б V║u>u┘юtJ┐=u>u tAhЛ>uPЪ╗>u▀П┘Жt/║u>uPЪ|>u╥юh─   Ъt$Ъt$PЪ5u>uЪжf= юВьК3ю^б V║u>u┘юtN┐=u>u tEh>uPЪ╗>u▀П┘Жt3║u>uPЪ|>u╥L$╥юj h─   QЪt$PЪ5u>uЪжf= юВьК3ю^б VWhu>uЪ░>u┘юu║~>uPХкмЪЪКhu>uЪx>uh╟}>uЪt>u║~>uЪu>u┐Ьu┐=u>u u_h >uЪ╟>uёu>uКM┐ЬuH┐=u>u uh>uЪ╟>uёu>u┐=u>u u&h─   ╬8y>uV║~>uhЬ  PЪ>u┘юt┴5u>uh╟}>uЪp>uг╦y>u   Ъ(>uЪt$h²H>u▀ЬЪ$>uPhТ  Ъ5~>uЪ >u▀П┘ЪtWЪ>uh╟}>uЪt>uЪu>uuB║~>u┐Ьu▀u>u3Ъ┘иtQЪ╛>u┴=u>uК┐Ьu║u>u3Ъ┘юtPЪ╛>u┴=u>uh╟}>uЪp>u┐Чu┐=╦y>uu▀D$К3ю_^б U▀Л│ЛХ  jd█E°PЪuЪ5~>uЪ>uh└  ██ЭЪЪQ║~>uЪuPЪ>uj █M°Q█∙ЭЪЪRЪuЪl>u▀Е]б S╦   VW▀t$█~┼┼┼к2й─А2я2ы┬F┬OHuХ_^[б U▀D$▀Л┐ЛpSVW3Ж┐Ьt,┐ЬStH┐Ь{tC=  tY=  └≤  =  └Г  ИУ  j ▀]jhx>uSЪd>uj SЪp>uИт  ЪuЪuЪuh u>uhx>uХJоЪЪИ╥  Ъuj▀]SЪx>uS╬е   ХcоЪЪSЪ>uj j@VjrSЪ8>uPЪL>uj jVjsS╬   Ъ8>uPЪL>uhl>u║~>uhH>uPХяЪЪ▀Ь┘Ъ└╪   ┐=~>uuj█GEPj ХaЗЪЪКB┐=~>uu9█EЧ█MьfгEЧ PQХ3ЭЪЪ┘юt█Mь█WE╥EЧQRфDь ЪT>uК	█GEPХ▄ЧЪЪ█wV─> t█GEPjsSЪ<>u█GPjrSЪ<>u╬QjtSЪP>u─> tjrКjsSЪ8>u▀ПjЪj h╠   VЪL>uVЪ4>u3ЖWХoЯЪЪh   ║~>uPХ
+оЪЪPjqSЪ<>uИm  ╥E┐Ьt┐Ь└  ┐Ьx└#  И3  █}░3ю╧   jС╚▀]SЪ■>u▀ПjA█E■PjrSЪH>u┘юu%hН  hП  SХYЩЪЪjrSЪ8>uPЪ4>uИА  j█EЛPjsSЪH>u┘юu%hО  hП  SХ!ЩЪЪjsSЪ8>uPЪ4>uИ╘  jtSЪD>u┬EФ█E■PVЪT>uj█MЛQ█FAPЪ╢>u╬MФ┴NT─}Ф tj█EЛP█MуQЪ╢>u┐=~>uuGj█EуPjХ≤ЬЪЪ┘юu+─}Ф t%hЯ  hП  SХ≤ЭЪЪjtSЪ8>uPЪ4>uИ   █}у3ю╚╚╚╚К`┐=~>uuW█Eу▀5|>uPЪжP█MуQХ┴ЗЪЪ┘юt█}у3ю╚╚╚╚К2█EуPЪж█|ж█EуPЪж@┐Ьs╬   +ПЪЮ>u┬GNuТ█EуPХmЭЪЪj\█E░P3Жhl>uhH>uЪ5~>uХ|нЪЪVjtSЪ8>uP▀=t>uЪвVjrSЪ8>uPЪвVjsSЪ8>uPЪвhT>ujqSЪ<>ujSЪ8>uPЪ4>uVjhx>uSЪd>ujSЪp>uК3j ▀]jhx>uSЪd>uj SЪp>uКhХ  jh0>uЪuЪd>u╬   К│}`П  u
+г╦y>u    ▀ф_^[▀Е]б U3и▀ЛSVW▀U╤│ьu>u╤≥Ьu>u┼A┐Ы┬│©y>u┼┬│ъy>u|з3ю3Ж┼▌v>u└иtJ╤иf╤юy>u3Ъ┼÷аy>uG┐Ъ┬÷©y>u|Н3Ъ┬шy>uf╤Юy>u┼÷Аy>uG┐Ъ┬÷ъy>u|НI┬Шy>uu╧3и╤▒(v>u╤≥@v>u█<┼▓юy>uA┬≈░z>u┼⌠Юy>u┐Ы┬≈╗z>u|я┐ю0F=   ▄lЪЪЪ_^[]б U3ю▀Л┐ЛSVW▀U@╤┬Wu>u┐Ь@┼┬┬Ъy>u|ГгEЭ    ┐} t
+╨   +UЭК▀UЭ╬ z>u©░}>ukр0╧   С╔3ю╤┬Xv>u@┼┴ z>u2▄▐z>u┐Ь0┬┬_z>u|Ю3и3Ж3ю╤╦`z>uЧ┐ф╤░ez>u█z╤░az>u┐а┐ю█<Z╤≤\z>u█<{╤░]z>u█z╤░^z>u╤■Z┬v>u▀заК─Ц┬≥<z>u▀заК─Ц┬≥=z>u▀зяК─Б─Ц┐Ь0┬≥>z>u┬▒?z>u▄|ЪЪЪ3ю╤┬┬x>u@┼┴@z>u2┬Ъy>u┐Ь ┬┬z>u|А╬░}>u© z>u╧   С╔ЪEЭ┐}Э▄НЧЪЪ3ю┼┬ z>u┼░ z>u┬░ z>u@┐Ь ┬┬z>u|Б3ю╤┬≤u>u▀U┼┴ z>u┬@┐Ь@|Г_^[▀Е]б U3ю▀Л╧   ┐Л@SVW█}юС╚3Ъ▀u3р┼>┼ь╠*йрК─Ц█ЗB┬\ю┐З|ХG┐Ъ|щЪu█MюQХ6ЧЪЪ3и▀}█3Жф  ┼█нрF┼\ю┬
+з┐Ч┬|ИA┐Ы|ш_^[▀Е]б U3р▀Л┐Л@3ю╧   SVW3Ж█}юС╚3Ъ▀н▀EаЫ▀чF┼╠"ы*крЬ$█:G┬Dю┐Ъ|ш┐б┐З@|я█EюPХБЭЪЪ_^[▀Е]б U▀ЛVW▀}┘Ъu╦   К?▀uф фG ┘Жu╦   К*ЪuХvЪЪЪ▀E┘юt┐Ьt╦   КjКj WVХзЧЪЪ3ю_^]цU3ю▀Л┐ЛSVW▀u┬@=   |У3и2р┬▌  ┬▌   ┬MЪ╤З┼▀E╤╤EЪп╤цб≥3б+б%Ъ   3б+б┬EЪ╤ю█0┼┬█GA┬≥В}│Ы   |╨_^[▀Е]б U▀ЛSVW▀u▀}╤├   ╤▌  @%Ъ   ╤й│АЪ   ┼┬┬╤з│ЦЪ   ┼30GЪMuн_┬├   ┬▌  ^[]б ллллллллллллV▀t$┐Чu(Ъ╗x>u┐=╟x>u u:Ъю>u<u*╘   ─t#Ъ╟x>uК!┘Жuз┐=╗x>u ~Ъ╗x>uКи3ю^б Ъ╟x>u║п>u┐Ч▀┴ ┐>u┘■   ┐=╟x>u |┐=╗x>u┘К   ┐=╟x>u }h─   Ъэ>u┐дё(┐>u┘юu.3ю^б ┐=╗x>uuh─   h    Ъ╪>uё(┐>u┘юu3ю^б ║(┐>uhp>uh p>uг     ║(┐>uё$┐>uХВ  ┐д╦   ^б ┘Жui┐=╟x>u |	┐=╗x>u uW┐=(┐>u tN▀5$┐>u┐Н95(┐>uw▀┘юtЪп┐Н95(┐>uvМ┐=╟x>u ║(┐>uP}Ът>u┐дКЪ╦>uг(┐>u    ╦   ^б лллллллллллллSVW╩   ▀|$U┘Ъu┐=╗x>u u	3ю]_^[б ┐Ъt┐Ъu2║,┐>u┘юt▀l$▀t$UWVЪп▀ьК▀t$▀l$┘шt"UWVХ%ЧЪЪ▀ьК▀t$▀l$┘шt
+UWVХsиЪЪ▀ь┘Ъt┐Ъu"UWVХЗЩЪЪ┘юu3ш┘шt║,┐>u┘юtUWVЪп▀ь▀ц]_^[б лллллллЪ%л>uлллллллллл▀D$▀L$х▀L$u	▀D$ВАб SВА▀ь▀D$Вd$ь▀D$ВАс[б ллллллллллллSV▀D$юu▀L$▀D$3рВЯ▀ь▀D$ВЯ▀сКA▀х▀\$▀T$▀D$яИяшяЙяьиuТВС▀ПВd$▀х▀D$ВФяr;T$wr;D$vN3р▀ф^[б Ъ%ь>utU  ЪЪЪЪЪЪЪЪЬV  л  ЬT  ЪЪЪЪЪЪЪЪ&Y  P  ╢U  ЪЪЪЪЪЪЪЪ▄[    ╗T  ЪЪЪЪЪЪЪЪ:\     лT  ЪЪЪЪЪЪЪЪХ\  $                        Л[  \  Ч[  ≤[  э[  й[  ╨[  ╕[      д\  ╢\  ─\  X\  j\  v\  т\  ▌\  H\  ·\      W  W  W  LW  2W  |W  ▄W  ╓W  юW  ьW  ПW  @W  hW   X  0X  @X  X  `X  pX  ├X   X  ╙X  юX  рX  ЮX  ПX  ЭX  
+Y  Y  NX      PV  ХV  йV  рV  чV  бV  nV  zV  dV  ▌V  ≤V  └V  ╛V  ╤V  ╒V      VZ  tZ  ─Z  ▌Z  °Z  ╡Z  дZ  жZ  BZ  hZ  [  [   [  эY  B[  X[  j[  z[  Z  6Z  (Z  НY  Z  ЧY  ЛZ  ЗZ  2[  йY  ╪Y  √Y  ┼Y  TY  FY  4Y  ·Y  ╟Y  hY  xY      h_except_handler3  e_strupr ┤wcstombs  |wcslen  ywcscpy  wwcscmp  Vstrncmp Hsprintf Mstrchr  __strnicmp <rand  Тfree  ╙_initterm 'malloc  >_adjust_fdiv  MSVCRT40.dll   LocalFree ⌡lstrcpyA  Ч GetModuleHandleA  √LocalAlloc  ║lstrlenA  yInitializeCriticalSection ╝ GetComputerNameA  MGetVersionExA L DeleteCriticalSection Q DisableThreadLibraryCalls ▐LeaveCriticalSection  X EnterCriticalSection  ~InterlockedIncrement  {InterlockedDecrement  Т GetLastError  8 CreateMutexA   CloseHandle SUnmapViewOfFile ╓MapViewOfFile 2 CreateFileMappingA  ╟OpenFileMappingA  щReleaseMutex  jWaitForSingleObject GetProcAddress  ≤ FreeLibrary ░LoadLibraryA  ·lstrcpynA \GlobalFree  UGlobalAlloc LGetVersion  KERNEL32.dll  ╬RegisterClassA  rLoadCursorA MUnregisterClassA  QUpdateWindow  RInvalidateRect  мReleaseDC Н GetDC :GetWindowLongA  ╤ EndPaint  	 BeginPaint  SetWindowLongA  ─ DefWindowProcA  =GetWindowRect xLoadImageA  ^WinHelpA  SetWindowPos  ╔OffsetRect  @ CopyRect  П GetDesktopWindow  jIsWindowVisible dIsIconic  GetParent ┐LoadStringA + CharUpperA  ЖSetForegroundWindow ▌ DialogBoxParamA у GetActiveWindow Ы GetForegroundWindow ∙MessageBoxA ╢ EndDialog УSetFocus  С GetDlgItem  РSetDlgItemTextA ╡ EnableWindow  bIsDlgButtonChecked  У GetDlgItemTextA зSendMessageA  / CheckDlgButton  USER32.dll  RegCloseKey 6RegQueryValueExA  .RegOpenKeyExA ARegSetValueExA  RegDeleteKeyA RegCreateKeyExA \SetSecurityDescriptorDacl ╙ InitializeSecurityDescriptor  ADVAPI32.dll  KSelectPalette 7RealizePalette  C DeleteDC  
+ BitBlt  Й GetObjectA  JSelectObject   CreateCompatibleDC  F DeleteObject  5 CreatePalette е GetDIBColorTable  GDI32.dll                   ЗJк5    ^           (]  ┬]  Х]  /  *  Е&  d'  ж3  ╬'  ┬0  J1  э$  Щ$  2  П2  4#  -$  \9  )4  L4  ┬5  4  Ж6  %8  ЭB  d9  i;  $^  >^  X^  j^  │^  ⌠^  ╘^  д^  ъ^  Я^  _  _  5_  P_  k_  y_  ▒_  ╘_  ц_  щ_  И_  Ш_  `  `         	         
+         MSNSSPC.dll AcquireCredentialsHandleA AcquireCredentialsHandleW ApplyControlToken CleanupCredentialCache CompleteAuthToken DeleteSecurityContext EnumerateSecurityPackagesA EnumerateSecurityPackagesW FreeContextBuffer FreeCredentialsHandle InitSecurityInterfaceA InitSecurityInterfaceW InitializeSecurityContextA InitializeSecurityContextW MakeSignature QueryContextAttributesA QueryContextAttributesW QuerySecurityPackageInfoA QuerySecurityPackageInfoW SealMessage SetMSNAccountInfo SspcCreateSspiReg UnsealMessage VerifySignature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         э$>u    Е&>u╬'>u    ┬0>u    \9>uж3>u)4>u2>u        L4>u┬5>u4>u4#>uЖ6>u%8>u                           Щ$>u    d'>u╬'>u    J1>u    \9>uж3>u)4>uП2>u        L4>u┬5>u4>u-$>uЖ6>u%8>u                            √0w,aН╨Q	≥дm▐Тjp5╔cИё∙d·2┬ш╓╦эyИуЮ┬ыр≈+L╤	╫|╠~-╦Г▒©░d╥Р ╟jHq╧СчA╬└}тзКДщmQ╣тТг┘с┐V≤lю╗kdzЫbЩЛиe┼O\ыlcc=ЗУ█х n;^iLДA`уrqg╒яД<GтKЩ┘рk╣
+╔З╗╣5l≤╡Bжи╩ш@Ы╪╛Цlь2u\ъEожэY=я╚╛0ы&: чQ─Qвхaп©╣Т╢!#дЁV≥∙╨о╔╫╦·╦(┬_╡ыф$И╠┤|o/LhX╚aа=-f╤░Aэvqш╪ р≤*уО┴┘╠q╣╤╔Д©÷3т╦Х╒иx4Ы ▌╗	√≤А╩j-=m≈ld▒\cФТQkkbalь0e┘N bРМ∙l{╔аТ┌WдУфы╟ePИ╥Й╦╬▀|┬╧ЭъщbI-зС|с▄eLтШXa╡MнQ╣:t ╪ёБ0╩тA╔ъJв∙ь=mдя╓ШТжсjИiCЭыn4F┬g╜п╦`зs-DЕ3_L
+╙и|щ<qP╙A'╬├ и%╣hWЁ┘o 	тf╧÷ДaнЫч^≤иы)"≤п╟╢╗вг=ЁY│╢.;\╫╥╜l╨ю ┐╦М╤Ё© Б╤ р╠t9GуЙ╞wр²&ш┐эscЦ└;d■>jm╗ZjzоД²Ъ	⌠'╝ 
+╠·}D⌠Прё┤hРЧбi]WbВкge─q6lГknvтЧЮ+с┴ZzзлJщgoъ╧ЫЫО╬▌C╬╥у▌╟`Хёжж~⌠я║дбь8RРъOЯg╩яgW╪╕щ╣?K6╡Hз+ьL
+╞ЖJ6`zAцО`ъUъg╗О▌n1y╬iF▄Ёaк┐f╪═рo%6БhR∙wлG╩╧"/&U╬;╨е(╫╡▓Z╢+jЁ\╖Ъвб1оп╣▀·ы,╝ч[╟бd⌡&РcЛ°ёju
+⌠m╘	°?6К┘grW ┌J©∙z╦Б╝+╠{8╤⌡▌р▓╬уЕ╥Оэ|!ъштрс├BБтЯЬЁщhn┐зм╬│[&╧ЖАw╟owG╥ФZ┬pjЪй;f\Ъ·e▐i╝bЬсЪkaEоlxБ
+═НрвT┐NбЁ9a&g╖В`пMGiIшwn>Jjя╝эZжыfъ@П;ь7S╝╪╘е·╩чо╡GИЪ╣0Р╫╫┼б╨й0⌠ЁS╕ё╢$6п╨⌠вм)WчT©gы#.zfЁ╦Jaдh]■+o*7╬╢║▌цъZ█О-                  x>u                       h   ∙  r   ∙  f   √  s   √  t   Ж   x   ≈          91)!	;3+#=5-%?7/'80(  :2*"
+<4,$>6.&'/7?&.6>%-5=$,4<#+3;"*
+2:!)	19  (0880(  91)!	:2*"
+;3+#    >6.&=5-%<4,$    
+ 	
+  	
+ 
+	  
+		
+ 	
+ 	 
+ 
+	 
+	
+ 	
+ 	 	
+	 
+
+ 	 	
+ 
+	
+	  
+	
+ 	 
+	
+	  	
+
+	 
+	 	 
+	
+  	
+ 	
+
+ 	
+	 
+	 
+ 		 
+
+	  	
+                                                                                                                                                                                                                                                                                                                                                            СJк5          0  ─   H  ─   `  ─   ┬  ─    СJк5       ░ ─═  ─    СJк5       Т  ╦  ─    СJк5       /   п  ─0   Х  ─1     ─    СJк5           ─    СJк5       	  0      СJк5       	  @      СJк5       	  P      СJк5       	  `      СJк5       	  p      СJк5       	  ─   ≈  YA         Д■            ш v           ы           \ь ╛           ═▒  D           S I G N I N   D4   V S _ V E R S I O N _ I N F O     ╫ОЧ      I     I  ?                         ╓   S t r i n g F i l e I n f o   ─   0 4 0 9 0 4 b 0   L   C o m p a n y N a m e     M i c r o s o f t   C o r p o r a t i o n   h    F i l e D e s c r i p t i o n     M S N   C l i e n t   f o r   3 2   b i t   p l a t f o r m s   0   I n t e r n a l N a m e   M S N S S P C   | ,  L e g a l C o p y r i g h t   C o p y r i g h t   ╘   1 9 9 5 - 1 9 9 6   M i c r o s o f t   C o r p o r a t i o n   @   O r i g i n a l F i l e n a m e   M S N S S P C . D L L   Z   P r o d u c t N a m e     M i c r o s o f t ╝   I n t e r n e t   S e r v i c e s     4 
+  F i l e V e r s i o n     6 . 0 0 . 7 7 5 3   8 
+  P r o d u c t V e r s i o n   6 . 0 0 . 7 7 5 3   D    V a r F i l e I n f o     $    T r a n s l a t i o n     	╟е х░         J╙     S i g n   I n    M S   S h e l l   D l g       P        Jj l B m p C C   S I G N I N         P     k ┤ ; g ЪЪ─ S i g n   i n       P     v +  h ЪЪ┌ & M e m b e r   I D :     ─ │P    < t P  r ЪЪ│         P     ┤ $  f ЪЪ┌ & P a s s w o r d :       ═ │P    < ┐ P  s ЪЪ│        P     ■ l 
+ t ЪЪ─ & R e m e m b e r   m y   p a s s w o r d      P    ≥ ∙ (   ЪЪ─ O K         P    ь ∙ (   ЪЪ─ C a n c e l         P    ∙ (  x ЪЪ─ & H e l p       P    ≤ k ╖ $ n ЪЪ─         P    ° t ∙  q ЪЪ┌       (   м  ╞         0=                   3   f   ≥   л   Ъ    3  33  f3  ≥3  л3  Ъ3   f  3f  ff  ≥f  лf  Ъf   ≥  3≥  f≥  ≥≥  л≥  Ъ≥   л  3л  fл  ≥л  лл  Ъл   Ъ  3Ъ  fЪ  ≥Ъ  лЪ  ЪЪ    3 3 3 f 3 ≥ 3 л 3 Ъ 3  33 333 f33 ≥33 л33 Ъ33  f3 3f3 ff3 ≥f3 лf3 Ъf3  ≥3 3≥3 f≥3 ≥≥3 л≥3 Ъ≥3  л3 3л3 fл3 ≥л3 лл3 Ъл3  Ъ3 3Ъ3 fЪ3 ≥Ъ3 лЪ3 ЪЪ3   f 3 f f f ≥ f л f Ъ f  3f 33f f3f ≥3f л3f Ъ3f  ff 3ff fff ≥ff лff Ъff  ≥f 3≥f f≥f ≥≥f л≥f Ъ≥f  лf 3лf fлf ≥лf ллf Ълf  Ъf 3Ъf fЪf ≥Ъf лЪf ЪЪf   ≥ 3 ≥ f ≥ ≥ ≥ л ≥ Ъ ≥  3≥ 33≥ f3≥ ≥3≥ л3≥ Ъ3≥  f≥ 3f≥ ff≥ ≥f≥ лf≥ Ъf≥  ≥≥ 3≥≥ f≥≥ ≥≥≥ л≥≥ Ъ≥≥  л≥ 3л≥ fл≥ ≥л≥ лл≥ Ъл≥  Ъ≥ 3Ъ≥ fЪ≥ ≥Ъ≥ лЪ≥ ЪЪ≥   л 3 л f л ≥ л л л Ъ л  3л 33л f3л ≥3л л3л Ъ3л  fл 3fл ffл ≥fл лfл Ъfл  ≥л 3≥л f≥л ≥≥л л≥л Ъ≥л  лл 3лл fлл ≥лл ллл Ълл  Ъл 3Ъл fЪл ≥Ъл лЪл ЪЪл   Ъ 3 Ъ f Ъ ≥ Ъ л Ъ Ъ Ъ  3Ъ 33Ъ f3Ъ ≥3Ъ л3Ъ Ъ3Ъ  fЪ 3fЪ ffЪ ≥fЪ лfЪ ЪfЪ  ≥Ъ 3≥Ъ f≥Ъ ≥≥Ъ л≥Ъ Ъ≥Ъ  лЪ 3лЪ fлЪ ≥лЪ ллЪ ЪлЪ  ЪЪ 3ЪЪ fЪЪ ≥ЪЪ лЪЪ ЪЪЪ                                                                                                                                                                 ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввппппппппвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпиххаююююююююююююаххипввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжохаююююююююююююююююююююююююахожвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхаююююююююююююююююююююююююююююююююахпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхаююююююююююююююююююююююююююююююююююююююахжвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхююююююююююююююююююююююююююююююююююююююююююююапвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпаююююююююююююююююююююююююююююююююююююююююююююююююапввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛╛│V++VV│╛ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпаююююююююююююююююююююююююююююююююююююююююююююююююююююапввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв│  V│╛ввв╛V++│вввввввввввввв+╛ввввVVввV  │ввв+ Vв+ввв+ввв╛+ +╛вв ввв ввв│+ввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхююююююююююююююююююююююююююююююююююююююююююююююююююююююююапввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв│ VввввввввввввV Vвввввввввввв+╛ввв╛ +в++вв+Vв│+вв╛ ╛в╛ │вв │в╛ ╛в ввв ввв ╛ввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв+VввввввввввввввввV ╛вввввввввв+╛ввв+++в ввввVвVVввV+Vв│++в│+вввV+в ввв вв╛+вввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпаююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююапввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛ ╛вввввввввввввввввв╛ │ввввввввв+╛вв╛ ╛+│+ввввввVVвв в в+╛ в+Vввв╛ в ввв Vв ╛вввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛ вввввввввввввввввввввв │вввввввв+╛вв ╛╛+│      вVVв╛ в в в+╛+Vввв╛ в ввв V++ввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжаююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююажвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛ вввввввввввввввввввввввв ╛ввввввв+╛в│ в╛+╛ вввв вVVв│+вVV+в││V+ввв╛ в ╛вв в │ввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпаюююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв+╛ввввввввввввввввввввввввв ввввввв+╛в ╛в╛+в ╛ввVVвVVв+│в╛ │вв ╛ ввв │в +вв вв ╛вввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввоююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввV│вввввввввввввввввввввввввв│+вввввв+╛V+вв╛+в╛ +++в+  + ввв ввв в│ + Vвв │ V ввв ╛ввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛ вввввввввввввввввввввввввввв+вввввв+│ ввв╛+ввв╛╛вввVVввввввввввввв╛╛ввввв╛╛ вввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююю*                                        OюююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввV╛вввввввввввввввввввввввввввв╛+ввввв+ Vввв╛+ввввввввVVвввввввввввввввввввввв вввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююю*                                        Oююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв вввввввввввввввввввввввввввввж ввввв++вввв╛Vвввввввввввввввввввввввввввввввв вввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююю*                                        Oюююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв│+вVввв│╛вв││вв╛│││вввпппжввппоп││ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююю*                                        OююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввV╛в ввв Vвв+ в+ +++ │пааахвпаааи╛ вввв╛╛ввв╛ввв╛вв╛ввв││ввв╛вввв││╛вввв│││вввв││╛ввв│ввв╛│ввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиююююююююююююююююююююююююююю*   +╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛╛+   Oюююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв вв│  вв++│ ввввV оааахвпаааив вввв│Vвв│ ввв ╛╛ в╛ V+ в╛ ввв +V +вв +V+ вв +V Vвв ввв +ввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв вв V │в++││вввв╛ ╔ааахвпаааив ╛ввв│Vвв  ╛вв ╛╛ в+│вв+V╛ вв│ ввв ╛VVввв+│V ввв ╛в вв╛ вввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжаюююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oюююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв в╛ ╛V+в++вввввв+ ╚ааахвпаааив ╛ввв│Vвв │+вв ╛╛ в ввв╛╛╛ вв │вввV+ввввв+│ ╛ввв+Vв вв╛+вввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oюююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв вV вв в++вв│+   │пааахвпаааив ╛ввв│Vв│ в вв ╛╛ в ввввв╛ вв ╛ввв│ в│+  +в ввввV+в вв╛+вввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв в │вв+V++в  ++│ввпааахвпаааив ╛ввв│Vв │вV│в ╛╛ в ввввв╛ вв ╛ввв│+в +│ввв ╛вввV+в вв╛+вввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oюююююююююююююююююююююоввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв │ ввв│+++╛ ╛вввввпаааавоаааив вввв│V╛ вв╛+в ╛╛ в+│вв│+╛ ╛вV+ввв ││+ввв│в+Vввв ╛в вв╛+вввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   Oюююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввв+вв ++вввв ++╛ ввввV паааагааааов вввв│V│+ввв в ╛╛ в╛ ││ ╛╛+ +╛ +│++вв V│+ вв V│++╛│ ││V │ввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююююю*   +вввввввввввввввввввввввввввввввв+   OююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввV╛в  ╛вввв+ +в +╛╛V ╛пааааааааав╛+вввв│V │вввV╛ ╛╛Vвв╛++╛в╛│╛+╛вV+Vввв╛V+VввввV+│в╛V VV+ Vввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююO***OVVV│вввввввввввввввввввввввввввввввв│VVV+***Oюююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввв╛+вVVввввв╛VVв╛++ +╛впхххпихахпвV╛вввв│+ вввв╛  ╛в╛ввввввввввввввввввввввввввввввввв вв╛+вввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *юююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввв вввввввввввввввввввввввввввввв ввввв│ Vввввв  ╛╛ вввввввввввввввввввввввввввввввввV V╛│вввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююивввввввввввввввввввввввввввввввввввввввввввввввввввV│вввввввввввввввввввввввввввв│+вввввввввввввввввввввввввввввввввввввввввввввввввввв╛│вввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваюююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввв вввввввввввввввввввввввввввв ввввввввввввввввввввввввв╛вввввввв╛вввввв╛ввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *юююююююююююююююююююююиввввввввввввввввввввввввввввввввввввввввввввввввввв│VввввввввввввввввввввввввввVVвввввв+╛вввVVV+в+вв╛+╛вв+│+в││ввв+│Vвв+в+V+╛ввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *юююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввв+│вввввввввввввввввввввввв╛ вввввввV╛ввв+вв+в+вв│╛вв╛╛в╛╛││вввVвVвв+вVвв╛ввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююююовввввввввввввввввввввввввввввввввввввввввввввввввввв ╛ввввввввввввввввввввввв ╛вввввввV│╛ввв + в+вв│╛вв│╛в╛│││вввVвVвв+╛+++Vввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююююю*   Vвввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввв╛ ╛вввввввввввввввввввв╛ ╛ввввввввV│╛V╛│вв+в вв│╛вв╛╛в╛╛│╛вввVвVвв+в+вв+ввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжюююююююююююююююююююююююююююююrrrr$   Vвввввввввввввввввввввввввввввввввввввввв+   *юююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввв │вввввввввввввввввв│ ╛вввввввввV╛вв+╛+++вV+в++╛ввVVVв++╛вV+│VVVVвVV+вввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююю    ╛вввввввввввввввввввввввввввввввввввввввввввв+   *юююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввV+╛вввввввввввввв╛++вввввввввввV│╛││вввввввв│╛ввввввв╛│вввVвVввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююю    ╛вввввввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛ +╛вввввввввв╛+ ╛вввввввввввв│++│ввввввввввввввввввв+Vвввв│ввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююю    ╛вввввввввввввввввввввввввввввввввввввввввввв+   *ююююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛+ +V│╛╛│V+ +╛ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююю    ╛вввввввввввввввввввввввввввввввввввввввввввв+   $rrr√ююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛╛│VV│╛╛вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваюююююююююююююююююююююююююююююю    ╛ввввввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжююююююююююююююююююююююююююююююю    ╛ввввввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввоююююююююююююююююююююююююююююююю    ╛ввввввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююивввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююю°rrrr    ╛ввввввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююr    ╛ввввввввввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююювввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююююююююююr    ╛ввввввввввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююжввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююr    ╛ввввввввввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввоюююююююююююююююююююююююююююr    ╛ввв│VVV│ввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююиввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиюююююююююююююююююююююююююююr    ╛ввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююr    ╛ввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююr    ╛ввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *ююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююю√rrrs    ╛ввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююO    вввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююO    вввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююO    вввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююю√rrrN    вввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююжвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююю*   +вввввввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююю*   +вввввввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююю*   +вввввввввввв+   +ввввввввввввввввввввввввввввввввввввввввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююююююююююююююююю*   +вввввввв╛╛╛╛+   +ввввввввввввввввввввввввввввввввVVVV╛вввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююю*   +вввввввв        +вввввввввввввввввввввввввввввввв    VвввввввV   *юююююююююююююююююююююююввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююю*   +вввввввв        +вввввввввввввввввввввввввввввввв    VвввввввV   *ююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююю*   +вввввввв        +вввввввввввввввввввввввввввввввв    VвввввввV   *ююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиююююююююююююююююююю*   +╛╛╛╛╛╛╛╛        +вввввввввввввввввввв╛╛╛╛вввввввв    VвввввввV   *ююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююю*            rююю*   +ввввввв│+++Vвввввввв    ╛ввввввв    VвввввввV   *ююююююююююююююююююююююиввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююю*            rююю*   +вввввввV   +вввввввв    ╛ввввввв    VвввввввV   *ююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююю*            rююю*   +вввввввV   +вввввввв    ╛ввввввв    VвввввввV    юююююююююююююююююююююювввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваюююююююююююююююююю*            rююю*   +вввввввV   +вввввввв    ╛ввввввв    Vввв╛╛╛╛+    юююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв    Vввв+   *юююююююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв    Vввв+   *юююююююююююююююююююююююююовввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв    Vввв+   *юююююююююююююююююююююююююжвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваюююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв    +╛╛╛+   *ююююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв        Oююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжюююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв        Oююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    ╛ввввввв        Oюююююююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв    │╛╛╛╛╛╛╛        Oюююююююююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв            rюююююююююююююююююююююююююююююююююююжвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв            rююююююююююююююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююююю*   +вввввввV   +вввввввв            rююююююююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююю*   +вввввввV   +╛╛╛╛╛╛╛╛            rюююююююююююююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююююююююююю*   +вввввввV            srrrrrrrrrrr°юююююююююююююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхюююююююююююююююююююююююююююююю*   +вввввввV            rююююююююююююююююююююююююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююююююююююю*   +вввввввV            rююююююююююююююююююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююю*   +вввввввV            rюююююююююююююююююююююююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююююююююююююююююююююююююююю*   +вввввввV   $rrrrrrrr°юююююююююююююююююююююююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиюююююююююююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююююююююююююююююююююююююю*   +вввввввV   *ююююююююююююююююююююююююююююююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжююююююююююююююююююююююююююю*   +вввввввV   *ююююююююююююююююююююююююююююююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиюююююююююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜╜╜╜╜╜╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююю*   +вввввввV   *ююююююююююююююююююююююююююююююююююююююююююююююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^44444444^┬вввввввввввввввввввввввввввввввввввввввввввввввввввваюююююююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююююююаввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬4444444444:┬ввввввввввввввввввввввввввввввввввввввввввввввввввжаююююююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜444444444444┌ввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююю*   +вввввввV   *ююююююююююююююююююююююююююююююююююююююююююююююпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв4444444444444┌ввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююююиввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^4444444444444┬ввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююю*   +вввввввV   *ююююююююююююююююююююююююююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^44444444444444Ёввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююю*   +вввввввV   *юююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬44:^^444444444^вввввввввввввввввввввввввввввввввввввввввввввввввввпюююююююююююююююююююO***+VVVVVVVO***Oююююююююююююююююююююююююююююююююююююююююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜^4444444╛вввввввввввввввввввввввввввввввввввввввввввввввввввпююююююююююююююююююююююO       *юююююююююююююююююююююююююююююююююююююююююююююпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜╜╜╜╜╜╜ввввввв╜╜╜╜╜╜╜ввввввввввввв╜┬^^^┌┬Ёввввв╜╜╜╜╜╜╜╜╜ввввввввввв4444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввпаююююююююююююююююююююO       *юююююююююююююююююююююююююююююююююююююююююююапвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜4444444╛вввввв4444444^вввввввввв╛^44444444^╛вв╜444444444╜вввввввввв44444444┬ввввввввввввввввввввввввввввввввввввввввввввввввввввжаюююююююююююююююююююO       *ююююююююююююююююююююююююююююююююююююююююююажввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬4444444^вввввв44444444╜вввввввв┌444444444444^Ё╜444444444ввввввввввв44444444:ввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююO       *юююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┌44444444╜ввввв44444444^ввввввв╛44444444444444:╜444444444╜вввввввввЁ444444444┬ввввввввввввввввввввввввввввввввввввввввввввввввввввввпаюююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююовввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^44444444┌ввввв444444444╛вввввв^444444444444444:444444444╜ввввввввв╛4444444444ввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююажввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^444444444вввв╜444444444^вввввв44444444444444444444444444┬ввввввввв┬4444444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввввввпаююююююююююююююююююююююююююююююююююююююююююююююююююююююююююаоввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв4444444444┬ввв╜4444444444╛ввввв44444444444^┬┬^44444444444┌ввввввввв^44444444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв4444444444:ввв╜4444444444^ввввв4444444444^ввввЁ:444444444^ввввввввв:44444444444^вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююююююхввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜44444444444┬вв╜44444444444╛вввв^444444444^ввввв╜4444444444ввввввввв4444444444444╛ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююююююююююююююююююююююююююююююююююююююююююююююхпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╛44444444444^вв╜44444444444^вввв┬444444444:вввввв^444444444Ёввввввв╜4444444444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиаююююююююююююююююююююююююююююююююююююююююююахввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬444444444444╛в┬444444444444╛вввв4444444444┌ввввв┬444444444╛ввввввв┬44444444444444┬вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхююююююююююююююююююююююююююююююююююююююхпввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┌444444444444^в┬444444444444^вввв┬4444444444^ввввЁ444444444┬ввввввв^44444444444444:ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхаююююююююююююююююююююююююююююююахпвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^4444444444444╜┬4444444444444╛вввв┌44444444444^╛Ёв444444444^ввввввв^444444444444444┬ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжохаююююююююююююююююююююююахипввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв:4444444444444┌┬4444444444444^ввввв┬444444444444444444444444ввввввв444444444^^444444вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпоиххаююююююююаххиопвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв444444444^44444┌4444444^444444┬ввввв╜^4444444444444444444444Ёввввв╜444444444^╛444444┌вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввЁ444444444╜:444444444444┬^44444:ввввввв╛^44444444444444444444╛ввввв┬444444444┌в^444444╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜444444444╜┬444444444444┬╛444444┬ввввввввЁ┬^^4444444444444444┬ввввв^444444444┬в╜444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬444444444Ёв:44444444444╜в^44444:ввввввввввввв╜╛┬┬^^444444444^ввввв^444444444╛вв^444444╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввппжввввввввввввввввввввввввввввввввввввввжппвввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬444444444вв┌44444444444╜в╛444444┬вввввв╜╜┬┬┬Ёвввввв^44444444:ввввв4444444444╜вв╜444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпхххххвввхххххвввхххххжввввиаююахввввпаююююахвввввхххххвввввхххххвввхххххжвввввхаююююапввввввпхюююхжвввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^444444444ввв44444444444╜вв^44444:вв┌44444444^вввввв^444444444вввв╜4444444444Ёввв^444444┬вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююаввваюююювввхююююивввхюююююавввхююююююююаовввюююююжвввваюююювввхююююивввпаююююююююхввввпююююююовввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв^444444444ввв^4444444444╜вв╛444444┬в╛444444444^ввввв:444444444╜ввв┬4444444444вввв╜444444:вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввжююююювввхююююпввхююююхввжюююююююввхюююююююююююивваююююпввввхююююпввхююююхввваююююююююююавввхююююююхвввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв:44444444^ввв╜4444444444вввв^44444:вв^4444444444^^^44444444444вввв┬4444444444ввввв^444444┬вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююпввхююююиввоююююхввпюююююахжвюююююиппаююююжвхююююиввввхююююиввоююююхввхююююаппхююююхввхююююаххвввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв444444444^вввв^444444444вввв┬444444┬вв:4444444444444444444444:вввв^444444444^вввввЁ4444444ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввваююююоввоююююхввпюююююввпююююавввиююююхвввпахховвиююююхввввоююююхввпюююююввюююююввввхахипввхююююпвввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜444444444^вввв╛444444444ввввв:44444:ввЁ:444444444444444444444┌вввв4444444444^вввввв┌444444┌ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююхввпююююавввююююювввююююавввхююююиввввввввввпююююаввввпююююавввююююювжююююювввввввввввхююююпвввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╜444444444^ввввв^44444444ввввв┬444444┬ввв^4444444444444444444^ввввЁ4444444444┬ввввввв4444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввиююююхвввюююююввваююююпввююююювввхююююююююююююююжжююююювввввюююююввваююююппююююююююююююююхвиююююивввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв┬444444444┬ввввв┬4444444^вввввв:44444:вввв╜^4444444444444444^ввввв╛4444444444┬ввввввв┌444444^вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввпююююаввваююююжввхююююиввхююююпввхююююююююююююююпвюююююпвввваююююжввхююююивююююююююююююююхвпююююхвввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввв╜^^^^^^^^^┬вввввввввв┬^^^^^^^^^╛ввввв^^^^^^^^444444444^^^^^^^4444444^ввв┬^:4444444^┌╛вввЁ┬^4444444444:┌╜вввввв┬4444444444╛вввввввв4444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввююююювввхююююпввхююююхввхююююпввпюююююххххаююююпваююююаввввхююююпввхююююхваююююахххаююююхввююююавввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввв╜4444444444вввввввввв┬444444444^ввввв4444444444╜ввв┬444444444^вввввввв┬:44444444444444^╜вввв╜╜┬┬┬┬╛╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююпввхююююхввиююююхввиююююивввюююююжвввхююююввхюююююахипхююююхввиююююхвхююююхвввпююююиввююююювввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввв4444444444вввввввввв╜444444444^ввввв^444444444╛ввв╜444444444^ввввввв^444444444444444444^вввввввввввввввввввввввввввввввввввввввввввввв╛:4^в╜^4:┌ввввввЁ^4^╜^^╛в^^┬в┬^4:^Ёвввв├├├├├├├├├├├┤╚жвввввв├├├├├├├├├├├├├├├╚ввввв╚├├[[[├┤╚ввввввввв╚├├├├├жвввввв┬^4^┬вв^^╛ввввв╛:4^^^┬в┬^^в╜^44^╜ввввввхююююиввоюююююипаююююавихююююаиивхююююаввжаюююхввиююююаюююхоюююююипаююююавваююююпввхююююжпиаююююхипввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввв^444444444╜вввввввввв4444444444ввввв┬444444444┬вввв4444444444вввввв^44444444444444444444:Ёвввввввввввввввввввввввввввввввввввввввввввв^444╛44^^4:Ёвввв┬444╛44^в^44╜44^^44╜ввв[[[[[[[[[[[[[[bжвввв├[[[[[[[[[[[[[[┤вввжb[[[[[[[[[\╚ввввввв╚[[[[[╚ввввв┬44^:4^в44^ввввв^444^44в┬44╛:4:^44┬вввввхююююхввпююююююююююююювюююююююююпваююююахаююююжввпююююаюююхпюююююююююююююввпюююююааююююхвиююююююююаввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввв┌444444444┬вввввввввв^444444444╜вввв╛444444444^вввв^444444444╜вввв┬4444444444444444444444:Ёввввввввввввввввввввввввввввввввввввввввввв^44╜┬44╜в:4^вввв┬44┬в^4:в┬44^44╜в┌^┬ввв├[[[[[[[[[[[[[[\жввв╚[[[[[[[[[[[[[[├вв╡[[[[[[[[[[[[[bжввввв╡[[[[[├ввввв^44в╜44┌^4:ввввв^44╜┬44Ё╜44^44┬в┬^┬вввввиююююхвввююююаюююююююхваююююююююиввхюююююююююпвввжююююоаююавююююаюююююююхвввпаююююююююаввпюююююююююввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввв┬444444444^вввввввввв^444444444┬ввввЁ4444444444вввв^444444444┬вввв:44444444444444444444444:ввввввввввввввввввввввввввввввввввввввввввв┌44в┬44╛в┌44╜ввв╛44╛в┌44в╛44^44^^^^^ввв┤[[[[[[[[[[[[[[[bввв╛[[[[[[[[[[[[[[[ввb[[[[[[[[[[[[[[\жввввв[[[[[bввввв^44вв^44^44ввввв┌44в╛44╛в44^44^^^^^╜ввввпюююююввваюююапаююююаввхююююююююхвввпхюююююхввввввююююхжаююваюююапаююююаввввввиаююююапвввпюююююююююжвввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввв╜444444444:вввввввввв┬444444444^ввввв4444444444Ёввв┬444444444^ввв╜44444444:┬Ёвввв╜^44444444┬вввввввввввввввввввввввввввввввввввввввввв┬44╜╛44┬в┬44┬вввЁ44┬в┬44╜Ё44:44^^^44╜вв╚[[[[[b├├├b[[[[[[╚ввв[[[[[[[[[[[[[[[╡╛[[[[[[[├├├[[[[[[├вввввb[[[[[ввввв┌44╜в^44^44╜вввв┬44╜Ё44┬в:4:44:^^44┬вввввюююююввввввввввпиипвввввхююююпввввввввппжвввввввввввввввпиввввввввпиипввввввввввппвввввввввююююаввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввв4444444444вввввввввв╜444444444^ввввв^444444444╛ввв╜444444444^ввв╛^4444444╜вввввввв44444444:вввввввввввввввввввввввввввввввввввввввввв┬44┌╜^4:в┬44┬ввв╜44^╜╜44^╜44^^4^в┬44Ёвв╡[[[[[╚вввв┤[[[[[├ввв\[[[[[╚╡╡╡╡╡╡╡╡в╚[[[[[\╡вввв\[[[[[╚вввв├[[[[[╡ввввв44^в^44^44^┬ввв┬44┌╜44:╜^44┬44Ё╜44┬вввввюююююпввввввввввввввввввиююююивввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввюююююввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввв^444444444╜вввввввввв4444444444ввввв┌444444444┬вввв4444444444ввввввв╜╛┬┌^вввввввв┬444444444╜ввввввввввввввввввввввввввввввввввввввввв44444╜^4444:вввв^4444╜444444^Ё^4444^вввв[[[[[├ввввв[[[[[[ввв├[[[[[╚вввввввввв╚╚├b[┤ввввв├[[[[[├вввв╚[[[[[╚ввввв╛:4444^44444┬вв44444^444444в^4444:ввввввхююююиввввввввввввввввввпююююхвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююпвввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввв^444444444┬вввввввввв:444444444╜вввв┬444444444^вввв:444444444╜ввввввввввввв╜┬┌^^44444444444┬ввввввввввввввввввввввввввввввввввввввввв┬^44┬вв┬^^┬ввввв╜^44┌╜^4^╜^^Ёвв╛^^┬ввввв├[[[[bввввв[[[[[[ввв╚[[[[[┤ввввввввввввввввввж╚├[[[[[[├вввв╡[[[[[┤ввввввв┬^^┬в╜^4:╜ввв┬^44┬^44╜┌^╜вв╜┌^┬вввввввхююююхвввввввввввввввввввююююавввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввхююююпвввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввв┬444444444^вввввввввв^444444444┬вввв╜4444444444вввв^444444444┬вввввввввв┬^44444444444444444┬вввввввввввввввввввввввввввввввввввввввввв╛44вввввввввввввв44╜в┌44ввввввввввввввв┤[[[[[╚╚╚╚b[[[[[├ввв╚[[[[[b╚╚╚╚╚╚╚вввввввв╚├\[[[[[[[[[bввввв[[[[[├ввввввввввввв┬4444ввв╛44в╛44╜ввввввввввввввввпхххххввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввв╜444444444^вввввввввв┬444444444┌ввввв4444444444вввв┬444444444┌вввввввв┌44444444444444444444┬ввввввввввввввввввввввввввввввввввввввввввв^^Ёввввввввввввв^^╛в╛^^Ёвввввввввввввв╚[[[[[[[[[[[[[[\жвввж[[[[[[[[[[[[[╚ввввв╡b[[[[[[[[[[[[├ввввв\[[[[[вввввввввввввв┬^4^╜ввв^^ЁЁ^^╛ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввв4444444444вввввввввв╜444444444^ввввв^444444444╜ввв╜444444444^ввввввв:444444444444444444444╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╡[[[[[[[[[[[[[┤вввввв[[[[[[[[[[[[[┤вввв╡[[[[[[[[[[[[[[╡ввввв├[[[[[╡ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввв^444444444╜вввввввввв4444444444ввввв┌444444444┬вввв4444444444вввввв^444444444444444444444:ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв[[[[[[[[[[[[[\╚ввввв├[[[[[[[[[[[[├вввв├[[[[[[[[[[[[[┤вввввв╚[[[[[╚ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввв^444444444┬вввввввввв:444444444╜вввв┬444444444^вввв:444444444╜ввввЁ4444444444444444444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввb[[[[[├├├├[[[[[├вввв┤[[[[[[[[[[[[[вввв[[[[[[[[[[[\┤╡ввввввв╡[[[[[┤ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввв┬444444444^вввввввввв^444444444┬вввв╜444444444:вввв^444444444┬вввв╛44444444444444444444:╛вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв├[[[[[вввв╚[[[[[╚ввв╚[[[[[├ввввввввввв[[[[[[[\├╚╡ввввввввввж[[[[[├ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввв╜444444444^вввввввввв┬444444444┌ввввв4444444444вввв┬444444444┌вввв┬444444444444444444^┬вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╚[[[[[╡ввввb[[[[\вввж[[[[[[ввввввввввв\[[[[[┤вввв╡╛ввввввввв[[[[[[ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввв4444444444вввввввввв╛444444444^ввввв4444444444╜ввв╛444444444^вввв╜444444444444^^^┬╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╡[[[[[╚вввв├[[[[[╡ввв[[[[[[жвввввввввв┤[[[[[╚ввввb[\├╚вв╡╡╡╡├[[[[[╚╡╡╡ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввв:444444444╜вввввввввЁ4444444444┌вввв4444444444┬вввЁ4444444444ввввЁ444444444┬ЁвввввЁвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв[[[[[├╚╚╚├[[[[[[╡ввв├[[[[[[[[[[[[[[┤вв[[[[[[├╚┤b[[[[[bв├[[[[[[[[[[[[[┤вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввв^444444444┬вввввввввв44444444444^╜╜┌4444444444┬вввв4444444444╜вввв^4444444^ввввввв^4:^┬╜Ёввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввb[[[[[[[[[[[[[[[╡ввв┤[[[[[[[[[[[[[[├вв╚[[[[[[[[[[[[[[╚в├[[[[[[[[[[[[[├вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввв┬444444444┌вввввввввв^444444444444444444444444^вввв^444444444╛вввв╛44444444┬╜ввв╛^44444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв├[[[[[[[[[[[[[[bвввв╚[[[[[[[[[[[[[[[ввв┤[[[[[[[[[[[[├вв╚[[[[[[[[[[[[[[вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввввввв╜444444444^вввввввввв┬444444444444444444444444^вввв┬444444444┬ввввв^4444444444444444444444ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв╚[[[[[[[[[[[[[\жвввв╡[[[[[[[[[[[[[[[вввв╛b[[[[[[[[[├ввв╡[[[[[[[[[[[[[[жввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввв4444444444вввввввввв╛444444444444444444444444┌вввв╛444444444^вввввЁ:44444444444444444444┌вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввж├├├├├├├├├├├┤╚ввввввв├├├├├├├├├├├├├├├╡ввввв╛┤├[[[├┤╛ввввв├├├├├├├├├├├├├├╡ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввв:444444444╜вввввввввЁ4444444444^4444444444444╛ввввЁ4444444444ввввввЁ^444444444444444444^вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввв^444444444┬вввввввввв4444444444╜^44444444444^вввввв4444444444Ёввввввв┌4444444444444444^Ёвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввв┬444444444┌вввввввввв^444444444╛в┬:44444444^Ёвввввв^444444444╛ввввввввЁ┌444444444444:┬вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввв╛444444444^вввввввввв┌444444444┬ввв╛^^44^^╛вввввввв╛┬┬┬┬┬┬┬┬┬╜ввввввввввв╛┬^^444:^┌╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввв┬444444444444444444444444╜вв┬444444444^вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввв╛444444444444444444444444┬вв╜4444444444вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввЁ444444444444444444444444┌ввв4444444444вввввввввввввввввввв4444444444вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввв444444444444444444444444^ввв^444444444╜ввввввввввввввввввв^444444444╜ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввв^444444444444444444444444ввв┌444444444┬ввввввввввввввввввв┌444444444┬ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввв┬444444444444444444444444╜вв┬444444444^ввввввввввввввввввв┬444444444^ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввв╛444444444444444444444444╛вв╜444444444:ввввввввввввввввввв╜444444444:ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввЁ444444444444444444444444┬ввв4444444444вввввввввввввввввввв4444444444ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   вввввввввввввввввввввввввввввввввввввввввв┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬╛ввв┬┬┬┬┬┬┬┬┬┬вввввввввввввввввввв^444444444╜вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв   ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв      F T y p e   y o u r   M S N   m e m b e r   I D   a n d   p a s s w o r d   t o   c o n n e c t   t o   t h i s   I n t e r n e t   s i t e .                                T h e   M i c r o s o f t   N e t w o r k х C a n n o t   s a v e   p a s s w o r d .   Y o u   d o   n o t   h a v e   a d m i n i s t r a t o r   p r i v i l e g e s   o n   t h i s   c o m p u t e r .   T h e   a c c o u n t   y o u   u s e   m u s t   h a v e   a d m i n i s t r a t o r   p r i v i l e g e s   o n   t h i s   c o m p u t e r   t o   p r o v i d e   p r o t e c t e d   s t o r a g e   f o r   y o u r   p a s s w o r d .              T h e   M i c r o s o f t   N e t w o r k                                            T y p e   y o u r   M S N   m e m b e r   I D .  T y p e   y o u r   p a s s w o r d .                                                                                                                                  L  P2└4┬4╞4б4у4э4С4Ы4H5]5≈5╙5е5у5Х5О5 666,656@6G6Q6`66├6⌠6═6╠6©6х6т6ч6О6Ь6,7>7j7│7▌7й7у7Л798D8K8░8╕8Ё8╬8х8у8Ю8Н8Щ8T9b9k9q9x9─9 9╥9╪9Н9::5:L:U:e:╫:я:э:В: ;;/;I;x;╔;╛;Ё;╧;©;я;в;щ;Б;Х;М;С;<<<<$<*<0<8<I<O<U<k<<▒<≈<и<о<в<Г<=:=I=O=U=c=l=r=x=√=ф=м=т=з=Ю=Я=В=Щ=>>>>>">5>D>J>P>^>g>m>s>▒>а>х>о>у>ш>Л>Р>Ь>Щ>?????4?╘?    t   ²0╡0 1Ё1ш122=2_2w2╙2╥2K3╝3У3B4I4└4╒4╛4╨4д4н4А45 5-53595G5P5V56666*63696Ш6w7~7╒8т8З8-9;9J9r9K;n<==┘> 0  ╛   0,5S5k5░6╟6╥6s7╥7М78≈8т899v9├9■9÷9е9ъ9Х9":U:w:┤:н:у:Ц:С:Q;Z;k;s;y;;█;√;°;╝;╩;d<╤<=)=>=█=п=в=Ь=>!>.>P>W>w> >╒>╞>Ц>М>
+???N?l?s?└?█?⌠?≥?ё?╟?а?й?о?ы?Ю?М?С?Ь?   @  П  0000#000>0F0S0X0^0q0│0├0 0╖0╛0╬0м0ы0Р0111%1≈1·1╤1м1И1П12222E2U2[2	3.353h3q3┐3√3²3д3э3Х3О344!4(474<4C4]4b4i4x4}4└4х4i5n5u5┬5ф5С5Щ5666656M6W6_6f6q6x6⌠6╛6╡6╩6х6н6с6ы6ч6Д6О6В6Щ67777"7(757;7G7Q7V7\7b7l7u7}7┴7▐7°7║7╖7╜7╢7©7л7р7ч7К7Я7Ж7Э78/858F8P8f8Е8Л8У899&989F9M9`9g9l9q9v9▄9╓9у9У9::!:3:::L:\:≥:╙:г:н:Б:Ъ:;;";2;O;U;┬;▐;╔;╠;П;<<<&<-<9<F<N<W<`<g<o<v<<█<■<²<╚<╢<й<К<Р<Ъ<==#=+=5=?=G=M=W=`=k=r={=┌=┬=▒=©=к=Л=Я=>>>>*>6>@>P>Z>d>l>z>┬>⌡>║>╟>╥>╫>ф>м>р>Н>Т>З>??? P  T   L1R1[1l1x1│1▐1■1÷1╚1╢1а1о1в1Г1З1Ъ1222#2(2C2L2U2^2g2z2┌2┬2▒2°2╒2с2Н2Q3r3*4 p  D   $0,00080@0D0H0L0X0\0`0d0h0l0▄0■0≤0═0╗0╛0╟0╢0ю0д0х0л0п0т05                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       dll\msnsspc.dbg target\i386\msnsspc.dll                                                                                                                                                                                                                             ░  ^       
+яН              	      с  Q     с`  8       
+п≤  х       р`  K        ╚  ь       %сP            ┐            °  ╧       сU  ╚   '     	п   H           H  1           y  -        ╕  >        Д  K        /  Ш   '     	п*  Ш   '     	п%  a        ├  	  
+    с▐!  ╔      с4#  Ы        
+-$  ╞        э$  !          Щ$  !          %  Ц      	 р&  Д      	 рЕ&        	 
+яd'  Z      	 я╬'  )        Г'  e       яL(  |       рх(  9      с*    $   	 с,  |  !   
+ с┬0  б       пJ1  б       п2  Д   
+    сП2  Ф   
+    сж3  E        4            )4            14            L4  <      ┬5  n      	сЖ6  /      %8  7      	с\9            d9    1    сi;  =           ╕;            ╣;            б;  H       р
+<             <            <  V        s<  L         ©<         з<  (          =          =          3=  Q        └=  б       рF>  Е       	с+?  <       яg?  G         ╝?  0           ч?  K         )@  ╝        в@  в       с╝A  N      сЭB        сD  П      сЯE  Z        KF  ^        ╘F  r       H  U   Ш    	пpH  -        ²H  @      с@Q  s       юR  ╘                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        MZ░       ЪЪ  ╦       @                                   ╦   ╨ ╢	м!╦Lм!This program cannot be run in DOS mode.
+$       1%5шuD[┬uD[┬uD[┬_L]┬tD[┬RichuD[┬                        PE  L М≥C8        Ю !     >                  Щj             
+      `     iW                                            ;                   P                                                                                     .rsrc    ;      <                 @  @.reloc      P      >              @  B                     ─   8  ─                  P  ─                  h  ─               	  ─                  	  ░   ═  Ь6          ≤G  d          (        Д      П  A  A  ┬  C  X  ╓       X           !  ю  @  H    P  U  т  `  `  э  p  p    ─  ▀  D  ░  ░  8  ═  ╓  `  ╟  ╠  P  ю  ю  ╪  п  ы  Х  Ю  А  l  П  В  х        э       $       h      D                  $  Э   0  4  ╗!  @  J  T"       ■$      т'     $  4(  0  3  <*     	  |+      X-       П.      X/       ю/      x1     	  Д3       ╦5  ,  U n u s e d   m e s s a g e   I D  
+     D E L E T E  
+     $  R E A D _ C O N T R O L  
+       W R I T E _ D A C  
+      W R I T E _ O W N E R  
+      S Y N C H R O N I Z E  
+   (  A C C E S S _ S Y S _ S E C  
+        M A X _ A L L O W E D  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   0 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   2 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   3 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   4 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   5 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   6 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   7 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   8 )  
+   H  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   9 )  
+   L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 0 )  
+     L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 1 )  
+     L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 2 )  
+     L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 3 )  
+     L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 4 )  
+     L  U n k n o w n   s p e c i f i c   a c c e s s   ( b i t   1 5 )  
+       N o t   u s e d  
+     H  A s s i g n   P r i m a r y   T o k e n   P r i v i l e g e  
+     4  L o c k   M e m o r y   P r i v i l e g e  
+   H  I n c r e a s e   M e m o r y   Q u o t a   P r i v i l e g e  
+   @  U n s o l i c i t e d   I n p u t   P r i v i l e g e  
+   H  T r u s t e d   C o m p u t e r   B a s e   P r i v i l e g e  
+   0  S e c u r i t y   P r i v i l e g e  
+     <  T a k e   O w n e r s h i p   P r i v i l e g e  
+     D  L o a d / U n l o a d   D r i v e r   P r i v i l e g e  
+     <  P r o f i l e   S y s t e m   P r i v i l e g e  
+     <  S e t   S y s t e m   T i m e   P r i v i l e g e  
+   L  P r o f i l e   S i n g l e   P r o c e s s   P r i v i l e g e  
+     L  I n c r e m e n t   B a s e   P r i o r i t y   P r i v i l e g e  
+   <  C r e a t e   P a g e f i l e   P r i v i l e g e  
+   L  C r e a t e   P e r m a n e n t   O b j e c t   P r i v i l e g e  
+   ,  B a c k u p   P r i v i l e g e  
+     D  R e s t o r e   F r o m   B a c k u p   P r i v i l e g e  
+   <  S h u t d o w n   S y s t e m   P r i v i l e g e  
+   (  D e b u g   P r i v i l e g e  
+   P  V i e w   o r   C h a n g e   A u d i t   L o g   P r i v i l e g e  
+     T  C h a n g e   H a r d w a r e   E n v i r o n m e n t   P r i v i l e g e  
+   X  C h a n g e   N o t i f y   ( a n d   T r a v e r s e )   P r i v i l e g e  
+     P  R e m o t e l y   S h u t   S y s t e m   D o w n   P r i v i l e g e  
+   0  D e v i c e   A c c e s s   B i t 0  
+     0  D e v i c e   A c c e s s   B i t   1  
+   0  D e v i c e   A c c e s s   B i t   2  
+   0  D e v i c e   A c c e s s   B i t   3  
+   0  D e v i c e   A c c e s s   B i t   4  
+   0  D e v i c e   A c c e s s   B i t   5  
+   0  D e v i c e   A c c e s s   B i t   6  
+   0  D e v i c e   A c c e s s   B i t   7  
+   0  D e v i c e   A c c e s s   B i t   8  
+   (  Q u e r y   d i r e c t o r y  
+     T r a v e r s e  
+     @  C r e a t e   o b j e c t   i n   d i r e c t o r y  
+     4  C r e a t e   s u b - d i r e c t o r y  
+     ,  Q u e r y   e v e n t   s t a t e  
+   0  M o d i f y   e v e n t   s t a t e  
+     @  R e a d D a t a   ( o r   L i s t D i r e c t o r y )  
+   8  W r i t e D a t a   ( o r   A d d F i l e )  
+     t  A p p e n d D a t a   ( o r   A d d S u b d i r e c t o r y   o r   C r e a t e P i p e I n s t a n c e )  
+     R e a d E A  
+       W r i t e E A  
+   ,  E x e c u t e / T r a v e r s e  
+        D e l e t e C h i l d  
+   (  R e a d A t t r i b u t e s  
+     (  W r i t e A t t r i b u t e s  
+   (  Q u e r y   k e y   v a l u e  
+   $  S e t   k e y   v a l u e  
+   (  C r e a t e   s u b - k e y  
+     0  E n u m e r a t e   s u b - k e y s  
+     D  N o t i f y   a b o u t   c h a n g e s   t o   k e y s  
+        C r e a t e   L i n k  
+   0  Q u e r y   m u t a n t   s t a t e  
+     8  C o m m u n i c a t e   u s i n g   p o r t  
+     <  F o r c e   p r o c e s s   t e r m i n a t i o n  
+   D  C r e a t e   n e w   t h r e a d   i n   p r o c e s s  
+     ,  U n u s e d   a c c e s s   b i t  
+   L  P e r f o r m   v i r t u a l   m e m o r y   o p e r a t i o n  
+     <  R e a d   f r o m   p r o c e s s   m e m o r y  
+     8  W r i t e   t o   p r o c e s s   m e m o r y  
+   X  D u p l i c a t e   h a n d l e   i n t o   o r   o u t   o f   p r o c e s s  
+   H  C r e a t e   a   s u b p r o c e s s   o f   p r o c e s s  
+     0  S e t   p r o c e s s   q u o t a s  
+     8  S e t   p r o c e s s   i n f o r m a t i o n  
+   <  Q u e r y   p r o c e s s   i n f o r m a t i o n  
+   D  S e t   p r o c e s s   t e r m i n a t i o n   p o r t  
+     (  C o n t r o l   p r o f i l e  
+   0  Q u e r y   s e c t i o n   s t a t e  
+   4  M a p   s e c t i o n   f o r   w r i t e  
+   4  M a p   s e c t i o n   f o r   r e a d  
+     8  M a p   s e c t i o n   f o r   e x e c u t e  
+      E x t e n d   s i z e  
+   4  Q u e r y   s e m a p h o r e   s t a t e  
+   8  M o d i f y   s e m a p h o r e   s t a t e  
+     ,  U s e   s y m b o l i c   l i n k  
+   <  F o r c e   t h r e a d   t e r m i n a t i o n  
+     <  S u s p e n d   o r   r e s u m e   t h r e a d  
+     8  S e n d   a n   a l e r t   t o   t h r e a d  
+   0  G e t   t h r e a d   c o n t e x t  
+     0  S e t   t h r e a d   c o n t e x t  
+     8  S e t   t h r e a d   i n f o r m a t i o n  
+     <  Q u e r y   t h r e a d   i n f o r m a t i o n  
+     D  A s s i g n   a   t o k e n   t o   t h e   t h r e a d  
+     p  C a u s e   t h r e a d   t o   d i r e c t l y   i m p e r s o n a t e   a n o t h e r   t h r e a d  
+   L  D i r e c t l y   i m p e r s o n a t e   t h i s   t h r e a d  
+     ,  Q u e r y   t i m e r   s t a t e  
+   0  M o d i f y   t i m e r   s t a t e  
+     (  A s s i g n A s P r i m a r y  
+     D u p l i c a t e  
+      I m p e r s o n a t e  
+     Q u e r y  
+      Q u e r y S o u r c e  
+   ,  A d j u s t P r i v i l e g e s  
+     $  A d j u s t G r o u p s  
+     ,  A d j u s t D e f a u l t D a c l  
+   H  C r e a t e   i n s t a n c e   o f   o b j e c t   t y p e  
+        Q u e r y   S t a t e  
+   $  M o d i f y   S t a t e  
+     4  C h a n n e l   r e a d   m e s s a g e  
+     4  C h a n n e l   w r i t e   m e s s a g e  
+   <  C h a n n e l   q u e r y   i n f o r m a t i o n  
+   8  C h a n n e l   s e t   i n f o r m a t i o n  
+   (  A s s i g n   p r o c e s s  
+     (  S e t   A t t r i b u t e s  
+     ,  Q u e r y   A t t r i b u t e s  
+     $  T e r m i n a t e   J o b  
+   8  S e t   S e c u r i t y   A t t r i b u t e s  
+   (  C o n n e c t T o S e r v e r  
+   (  S h u t d o w n S e r v e r  
+     ,  I n i t i a l i z e S e r v e r  
+     $  C r e a t e D o m a i n  
+     ,  E n u m e r a t e D o m a i n s  
+     $  L o o k u p D o m a i n  
+     8  R e a d P a s s w o r d P a r a m e t e r s  
+     8  W r i t e P a s s w o r d P a r a m e t e r s  
+   0  R e a d O t h e r P a r a m e t e r s  
+   4  W r i t e O t h e r P a r a m e t e r s  
+        C r e a t e U s e r  
+     ,  C r e a t e G l o b a l G r o u p  
+   ,  C r e a t e L o c a l G r o u p  
+     8  G e t L o c a l G r o u p M e m b e r s h i p  
+   $  L i s t A c c o u n t s  
+       L o o k u p I D s  
+   ,  A d m i n i s t e r S e r v e r  
+     (  R e a d I n f o r m a t i o n  
+   $  W r i t e A c c o u n t  
+       A d d M e m b e r  
+   $  R e m o v e M e m b e r  
+        L i s t M e m b e r s  
+     A d d M e m b e r  
+   $  R e m o v e M e m b e r  
+        L i s t M e m b e r s  
+   (  R e a d I n f o r m a t i o n  
+   $  W r i t e A c c o u n t  
+     8  R e a d G e n e r a l I n f o r m a t i o n  
+     (  R e a d P r e f e r e n c e s  
+   ,  W r i t e P r e f e r e n c e s  
+       R e a d L o g o n  
+      R e a d A c c o u n t  
+   $  W r i t e A c c o u n t  
+     h  C h a n g e P a s s w o r d   ( w i t h   k n o w l e d g e   o f   o l d   p a s s w o r d )  
+   h  S e t P a s s w o r d   ( w i t h o u t   k n o w l e d g e   o f   o l d   p a s s w o r d )  
+      L i s t G r o u p s  
+     0  R e a d G r o u p M e m b e r s h i p  
+   4  C h a n g e G r o u p M e m b e r s h i p  
+   T  V i e w   n o n - s e n s i t i v e   p o l i c y   i n f o r m a t i o n  
+   H  V i e w   s y s t e m   a u d i t   r e q u i r e m e n t s  
+     L  G e t   s e n s i t i v e   p o l i c y   i n f o r m a t i o n  
+     L  M o d i f y   d o m a i n   t r u s t   r e l a t i o n s h i p s  
+   x  C r e a t e   s p e c i a l   a c c o u n t s   ( f o r   a s s i g n m e n t   o f   u s e r   r i g h t s )  
+   8  C r e a t e   a   s e c r e t   o b j e c t  
+     0  C r e a t e   a   p r i v i l e g e  
+     <  S e t   d e f a u l t   q u o t a   l i m i t s  
+     L  C h a n g e   s y s t e m   a u d i t   r e q u i r e m e n t s  
+     H  A d m i n i s t e r   a u d i t   l o g   a t t r i b u t e s  
+   0  E n a b l e / D i s a b l e   L S A  
+     ,  L o o k u p   N a m e s / S I D s  
+   0  C h a n g e   s e c r e t   v a l u e  
+   0  Q u e r y   s e c r e t   v a l u e  
+     D  Q u e r y   t r u s t e d   d o m a i n   n a m e / S I D  
+   h  R e t r i e v e   t h e   c o n t r o l l e r s   i n   t h e   t r u s t e d   d o m a i n  
+     d  C h a n g e   t h e   c o n t r o l l e r s   i n   t h e   t r u s t e d   d o m a i n  
+     |  Q u e r y   t h e   P o s i x   I D   o f f s e t   a s s i g n e d   t o   t h e   t r u s t e d   d o m a i n  
+     |  C h a n g e   t h e   P o s i x   I D   o f f s e t   a s s i g n e d   t o   t h e   t r u s t e d   d o m a i n  
+   <  Q u e r y   a c c o u n t   i n f o r m a t i o n  
+   T  C h a n g e   p r i v i l e g e s   a s s i g n e d   t o   a c c o u n t  
+   L  C h a n g e   q u o t a s   a s s i g n e d   t o   a c c o u n t  
+   d  C h a n g e   l o g o n   c a p a b i l i t i e s   a s s i g n e d   t o   a c c o u n t  
+   0  E n u m e r a t e   d e s k t o p s  
+     (  R e a d   a t t r i b u t e s  
+   ,  A c c e s s   C l i p b o a r d  
+     (  C r e a t e   d e s k t o p  
+     ,  W r i t e   a t t r i b u t e s  
+     0  A c c e s s   g l o b a l   a t o m s  
+   $  E x i t   w i n d o w s  
+     0  U n u s e d   A c c e s s   F l a g  
+     `  I n c l u d e   t h i s   w i n d o w s t a t i o n   i n   e n u m e r a t i o n s  
+        R e a d   s c r e e n  
+   $  R e a d   O b j e c t s  
+     $  C r e a t e   w i n d o w  
+      C r e a t e   m e n u  
+   $  H o o k   c o n t r o l  
+     ,  J o u r n a l   ( r e c o r d )  
+     0  J o u r n a l   ( p l a y b a c k )  
+     T  I n c l u d e   t h i s   d e s k t o p   i n   e n u m e r a t i o n s  
+     $  W r i t e   o b j e c t s  
+   8  S w i t c h   t o   t h i s   d e s k t o p  
+     8  A d m i n i s t e r   p r i n t   s e r v e r  
+   0  E n u m e r a t e   p r i n t e r s  
+     $  F u l l   C o n t r o l  
+       P r i n t  
+   0  A d m i n i s t e r   D o c u m e n t  
+   D  C o n n e c t   t o   s e r v i c e   c o n t r o l l e r  
+   4  C r e a t e   a   n e w   s e r v i c e  
+     0  E n u m e r a t e   s e r v i c e s  
+     `  L o c k   s e r v i c e   d a t a b a s e   f o r   e x c l u s i v e   a c c e s s  
+     L  Q u e r y   s e r v i c e   d a t a b a s e   l o c k   s t a t e  
+   d  S e t   l a s t - k n o w n - g o o d   s t a t e   o f   s e r v i c e   d a t a b a s e  
+   X  Q u e r y   s e r v i c e   c o n f i g u r a t i o n   i n f o r m a t i o n  
+   T  S e t   s e r v i c e   c o n f i g u r a t i o n   i n f o r m a t i o n  
+   8  Q u e r y   s t a t u s   o f   s e r v i c e  
+   L  E n u m e r a t e   d e p e n d e n c i e s   o f   s e r v i c e  
+   ,  S t a r t   t h e   s e r v i c e  
+   ,  S t o p   t h e   s e r v i c e  
+     D  P a u s e   o r   c o n t i n u e   t h e   s e r v i c e  
+   H  Q u e r y   i n f o r m a t i o n   f r o m   s e r v i c e  
+     X  I s s u e   s e r v i c e - s p e c i f i c   c o n t r o l   c o m m a n d s  
+   (  D D E   S h a r e   R e a d  
+     (  D D E   S h a r e   W r i t e  
+   <  D D E   S h a r e   I n i t i a t e   S t a t i c  
+   8  D D E   S h a r e   I n i t i a t e   L i n k  
+   ,  D D E   S h a r e   R e q u e s t  
+   ,  D D E   S h a r e   A d v i s e  
+     (  D D E   S h a r e   P o k e  
+     ,  D D E   S h a r e   E x e c u t e  
+   0  D D E   S h a r e   A d d   I t e m s  
+   4  D D E   S h a r e   L i s t   I t e m s  
+     $  C r e a t e   C h i l d  
+     $  D e l e t e   C h i l d  
+     $  L i s t   C o n t e n t s  
+      W r i t e   S e l f  
+     $  R e a d   P r o p e r t y  
+   (  W r i t e   P r o p e r t y  
+        D e l e t e   T r e e  
+      L i s t   O b j e c t  
+   (  C o n t r o l   A c c e s s  
+     d4   V S _ V E R S I O N _ I N F O     ╫ОЧ       e    e?                        д   S t r i n g F i l e I n f o   ═   0 4 0 9 0 4 B 0   L   C o m p a n y N a m e     M i c r o s o f t   C o r p o r a t i o n   \   F i l e D e s c r i p t i o n     S y s t e m   o b j e c t   a u d i t   n a m e s   8   F i l e V e r s i o n     5 . 0 0 . 2 1 4 9 . 1   6   I n t e r n a l N a m e   m s o b j s . d l l     t (  L e g a l C o p y r i g h t   C o p y r i g h t   ( C )   M i c r o s o f t   C o r p .   1 9 8 1 - 1 9 9 9   >   O r i g i n a l F i l e n a m e   m s o b j s . d l l     ~ /  P r o d u c t N a m e     M i c r o s o f t ( R )   W i n d o w s   ( R )   2 0 0 0   O p e r a t i n g   S y s t e m     <   P r o d u c t V e r s i o n   5 . 0 0 . 2 1 4 9 . 1   D    V a r F i l e I n f o     $    T r a n s l a t i o n     	╟                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ITSF   `      ┼MЦ 	  Щ|╙{п· ═и"ФЛЩ|╙{п· ═и"ФЛ`              x       T      л      Ч      █;              ITSP   T   
+            ЪЪЪЪ        ЪЪЪЪ   	  j▓].!п²Ы ═и"ФЛT   ЪЪЪЪЪЪЪЪЪЪЪЪPMGL1      ЪЪЪЪЪЪЪЪ/   /#IDXHDR│╕5═ /#ITBITS   /#IVBЖy4	/#STRINGS│й'┌@/#SYSTEM │║c/#TOPICS│ф5`/#URLSTR│г]┌J/#URLTBL│гH	/#WINDOWSУ-│L/$FIftiMain  	/$OBJINST│░v∙?/$WWAssociativeLinks/   /$WWAssociativeLinks/BTreeЪ2░L/$WWAssociativeLinks/Data│▐~N/$WWAssociativeLinks/Map│░L
+/$WWAssociativeLinks/Property│░V /$WWKeywordLinks/   /$WWKeywordLinks/PropertyЪ./htm/   //htm/odbcoracleconnection_string_attributes.htm ╖B/htm/odbcoraclemicrosoft_odbc_driver_for_oracle_setup_controls.htm╖÷'?/htm/odbcoraclemicrosoft_odbc_for_oracle_connect_dialog_box.htmф:▀?"/htm/odbcoracleproduct_support.htmяy┘N*/htm/odbcoraclesoftware_support_levels.htmвG├1/htm/odbcoraclesqlcolumns.htmщx┤/msorcl32.txtВ-┬/stylesheets/   /stylesheets/msdn_ie3.cssО├/stylesheets/msdn_ie4.cssДz┼::DataSpace/NameList  <(::DataSpace/Storage/MSCompressed/Content ╒i╡(,::DataSpace/Storage/MSCompressed/ControlData j)::DataSpace/Storage/MSCompressed/SpanInfo b/::DataSpace/Storage/MSCompressed/Transform/List <&_::DataSpace/Storage/MSCompressed/Transform/{7FC28940-9D31-11D0-9B27-00A0C91E9C7C}/InstanceData/   i::DataSpace/Storage/MSCompressed/Transform/{7FC28940-9D31-11D0-9B27-00A0C91E9C7C}/InstanceData/ResetTable у0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Й▐vЫ ┌ : %    U n c o m p r e s s e d    M S C o m p r e s s e d   { 7 F C 2 8 9 4 0 - 9 D 3 1 - 1 1 D 0 gf         LZXC                   
+   ╫r7	  HHA Version 4.73.8198  $ 	          `п `п 0фА ≤╬╬         B htm/odbcOracleMicrosoft_ODBC_Driver_for_Oracle_Setup_Controls.htm  ! Microsoft ODBC Driver for Oracle  	 msorcl32   main         T#SM▄╝@)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               #2P4  _ vy╒хю╒0▓'░▄Mэm╩ъ╜╜[Ъ╠цaь╝kш░JМ4Нщ▀╩╩щВ·вuI■UЧF╚ЧR@V@?Ы 
+F╒┌╒╗)ъРQуTT	b ─≥!╟  B<Т╣ъШ╤}Вё╡╛Yр·щ┌©Y%:J╤╜⌡ПН╩]k°╪щб├l─0ЫП▐░CчРa╪│h║vE├ц─b3┬Ч≤ me≤lв;мo╖7еАП  1 " #├"НnФnФ^щU]щ]U┘╠F©e@Х2╪`e╙═#Hи8=ттю}O}╗З3╒╖rlvk9╜┘╤;╘эUsjwop	k┴}▌█MЁ╡kш?⌡╕#f▓╦	ы╩3╝╜У++m╙HоZ⌡ч[ZЙ╝М0мЛэдФЙшш]КЖUOЁCg╠┌;6]Ь┘░e0Кxя&сТ(ЮLё│■у*╩Пi&FfVnvбК>:`╒╤и\GЁ└Аxc┼Ц=╒1"≥ш╚pадИ┼#SEkР┘╨JEЮ┬KЕM*ю'лI▄│R▒·об╗╘kз~Зю║т═ыДЁZmъ≥√}╙╕е(M(y┌║e√{{н╡B≈√П╖╤ЖLП·М<y^╙мИf5x╦N P©▒&░`╠╒yY²Л╫pD█ °JpТ▐I╚&!лhhхЁИ⌡jN(▒Ф2╤^Э╜╨sБ╘]Ж╪И░╩?в)⌡╓	кG.√)²xLXK╞6Gjx(дm╬╞ТБуу╗3tg≈■╜╕%]▄H@и╚з╗7╟▓∙▀²⌠y┘ИГй╡мS╬|мдМ▓╧ж%*$>ББA"┘B8й0▐║с!зщ#╕;┬S▀HЬ0ЩL²▄с■╘5░╚└ГХ▌╞з\╚┬⌠}1у╠╚фLИh├© еЖд\MK©G[h┌nУ╝╜┬∙╣-╘+{f>╢/╟пVYГЪl;╚x╩j╞yxZ∙1~;&пАclХW8уЗ╞j╜■╙}▒щ╬тдчPUчhфЭDDЪ,F]∙с]∙├Y4XjЁ	kЁDN5╡-] H 7S.┼?щ\\Z[²щ²]э:}9B<[Оf├XёJр6`▓Dp)fH"╕Х▓20╞>JБ%▒f┘Z╜WаI1А╖*⌠М┐.Hа
+щ└~ йMF╝CDх	aК]7<МT■d╔┘`у╓T≈%Д2@Г-HТIд8┼a┌K"┴.║Я≈├м⌡▐,∙)H╡:░ъnоS9о3юx╛╡╢7л!X;K9р╬▒и<■zаШT│лЭ??ЩW`J┬≥Рb■ёР╝v2|вр`XЦ≥T!5^6r═НУ■▐`%√Б╕■ЬX≥╬>╥∙ 4╩8╣ф6rN!YUПR■4≥l╟RUы⌠g&Ы╙ 6∙ЩИАЩ╖ДTЪаjqжЗ\Щ▄;uж	]лeЁшЗч.'аT┴╙ЩYсЫ4I[}xТw6ИС&T╖ё~ f2\°≤≥у ЬZ,I╓²╫Stu╥_%≈ФZzI⌠]з≤О1B:'!^БN6JEг+РДДи?uф≈B▓ю{ж_
+VьLIОc/─г╞щЖ╫0╪c├эиGiA∙╠ЭНыxTуS╩XбWgo>g≥s╪I▄2ШЯy°$bAЖ╔zъ▌OЧ▐ЛсмнЯ┬xmг+┌ш╠Хвб[╟╚≤e┐╔7Ц<]пg4^╡дчА"hохи┴ГMJ^▌CЕ╤ЗЩйk╕╒еПжЮ\щ≤8 ╚ЛVИ╝D÷╞Ф%║h╧PN
+Ы\LgПИ!╛W`÷NMРЫ█Oцzн█Н╥PГVеRiфи█Ф╗OсФЗDP└KЩ╕┤ЛqrЦ;Kп@┼╗x╤ФФ°Ё≈╣Д┤ЩCИ╙>Ц$Dт$`=∙3 eE )╢+w°И\ПXcX$
+лМ(│I╕щm#≈Г■Ы╥╩Юл┴eОY╪X╦~ИдХg▄X╣⌠xФш░HiQ│÷╓э╠Xn▄┼╝ыMят
+√A╪ы*:▒╞4╦╗ы═ЮОHм+T?NCУ║ч8бb*ScоD╓%,┐R╢{ц%ТЗ─Jcекhk█ЙВYт═эНзэЙХ╙ъ╛6╬╤r▓Г°▀+⌡у≈л╩3А╔k╠▄FpIю{EЕ"vЕП╢^Cб	┐╘~ЛьXMдхЯ╝^[JIL=I[╚■lЫ│Sс8Mц*╬┘J	~}б┘23╧╫УбCбд(┘≤√╧╔r(э\ж╬В∙sЦ╕юRЬсзыы╛И╪СУ[╖'^у;J╫┐е]eуPw≤ ╞Е©цHz√к≤Y∙)2▐Ы╪fЭu⌠м╔h╬╛L|╖Сц≥▄\Lг2li╖T╛\ таэШ>/jfЕRм@"(&cI-xrш▄lцLЙ╧uИ╤i▄╢9рж+v&╢6╜▐гГ7╤Vыыvmt╢╚j╨=k√Т©≥≥│5п	╝■└п▄y:i√⌡z╓╙&c≤ОWцEжKц┤Ь`▄Y5кл©$[╔÷	-rYБ:·й∙mP$KN⌡Ет&'I²8██╜╖5Й&kк╖ne║6fD▐ы√Вк┴≥h╖╗b70┤o║┴┴╧╒╞рп"═сvy╝╪≈т<еЦhР≤52l└≥9Qчg╨rЭХЧ╫╥╒╟9├-чЗ▐Д<С9╤C+(╒зй╜~50┴ю[kшлде⌡щn-Ё ╣▀8\Внqy╤)├▐t∙╩QOч─п╞Ё╙0у7`■╦RРЛS┌╘З╘b█a╖сМд╓╗S│цЖ~[╕Эf ╢f┴Э╣▌┐ЁLsF▀┌-IнlА?≥кГ3Ц-]©ГУИ╔Ъ╓√≈4ЦДyВ~сl╜▐y,шД|ВTШё_T²┴/╣x┌gc╫СцlгOоП6;R5иВyFQ▓ечЭ┌M0╤≥╘ы█ЖЁm╤┴Щя╙хЕ]A╣┬X╪jр|k▄╪йsЗ·4╤lчнEpКЙЯ:┘╤│²оФx4┤╝+ё0╡F;EDХV3ир(#ЦГ╒9з.iP┐Т═тu9iБуyг²г2пЬ╩DбОЁ&╧┌zP>цQДSCJ*G{|7▌VyBДeЪЕ;Ы3∙>┌w#8≥B╖╪$TБV83┴╢╔|b╜▀╤чНк5▌й═[ЭцkB▓²╪V [╠╩|ЗыvtDСиmM4▒УИmоИjNк╗wz╨гJ╕а∙╜pV%Т(Ёц;sr.ЁH^╙
+&Cг▌q≈PЛг≈░ГU7Ы 0┴5bЛ*∙0_Nt|щц,pC3┤▀z└≤5Ё▄!DK5КU!Jжh╙лдЛb╕r]P4эf
+[_:╓"ш╤²ЁZkk}╘╛[Wп╙4В0╬╓й÷╪;⌠╫·Ёfl7[Ю ц≈│Г╝╬╘У▀'▒ЛБXэ╝╥|&┬л╟Яh-"÷▒JчJр▓╙╛нNРZ$р─HzэK,QтW,⌠=b *^аuУ╡©╝1 sБ÷к╘╤tЖ└Ц^■▐кв7Р
+З≤ц╤q┌7⌡+e∙Vp█Б╝▄i-`Г'h─▐+ФтTfе╖B╤жЫ≤&эj\6<C#лsоYk!А╖lН\"Гe÷Y\ГXEГЛЭЮ╖KОЫфF▒N)!█X4b┴YАР0Ьж╙√7ЁI÷┤Sт╠3мnFp]╥▄}75E░√ЙhОy!ЁBUhe9Q99┬0╗═QLYфя╕eЙ╛┘Ф╞(ёщm▄А∙Яl╢J^╒)├PБЧи2gгGн≥I╕·|n8M.[OZu=▒╠╢лLжd╥bU~(│rпПхjб>╩ч╧.Kд▐ш╖8⌠RХa=Ic
+╫`Ч  R3сЪК х╡+⌠t╔ъJQЛz6N╦ьЯW(ЛЩ╧┬R?ю5]°МЙ╝Mх▒O(╔#u'O╤ ╩Ж∙DП√SW,4╓╥ьnечхY≈╡{Xdяф╔А┴-ХП√Д╧о┌yЪ"▌▄эЙ╔Ч▄#╔▌└XМчQ&/2k▓P[■╗i┘YСъхС┘uWqlю	й╩Ч^═ЖДBbrnМSомw!<╪≈$Д╘IнЕ██v-6╞/Ък&:╬~√ad3г9H)≤ЖZN
+O°9║В≥≈≥mS┴Ёp#
+┬~<у%-·й┘(N├BVCЦдб▐L┴пl$vТbЖ·AV╒SЧ╒ДеwШ┐cYEЩCУ╙u▐ВW▓КхIM╦_F╩╖Хг>⌠щщ7╬D╧nN≈{╜╬HOkк╒m╪АЩnЫ6]М[ы[wт╥.╙салt+оХC	А∙O▀4^:rя<ЬB[p╖З╖▄ьBDrJзZbqL~╜═уйn>Ъ⌠R╧жNz
+U+uчSe┼	╕г╥йг∙й,╖Ж,╙┐аяб╙y sKO╖E^ЧИЕя╘ м [╝╔с'9▀йК╡<┘⌡┴©(bf.gs├╣⌠ Qб<*_g+m▀ИрEааыНTН. А*>с╠┼▐N▓TDa&gV©l3╘т╠9╙▄#╕=МБЕВYrё!\╣илfЖ©ЮфpВ°~wbXСk┐5²|┘S╓▒║f╕0ъж`P'
+╜cs═ЁD$MCRR╞'B!fC%╛$Sэ■zЙSx'дЪд[э{╝fСК╜╤I|A┼а>[▒е`тиЩPhLр@_Ц┐▐КU≥Ьb!Х0╝Й⌡дл╞eЖ╙YE╪║║X?1Eв$■╝╕Яш6kn^(IВМ?ЯЬuAeьo╔─/Swйцdр}д),г3л▓лч┼╪M∙▒Z3)└┬dHй╛╛$7Q~иЦ╩РОB²ыjрХЬД╖■╫%²|╬y÷щvRЖ)√└jBёFe╚Nf*└Аw`░▒╘Н≥╠2e6лк·⌠²	iтДтьХ√ч÷▓NnН╜Йм#дУ≥╒╟Щъ░╣Д╦Го╣	Z┤щ?[≈к╩╧╣Жu?Ъ°╨(-Шy⌡E┌=тжу┌├ФёE╘,^┘b+н╟ ┤═$Tsрм0╨Af░▐÷0mтOR-├Gк╝[4ЕЕ∙Dыйй┼┘╣О%ё/ШnMkцez┐Р ┘╕лS©Ю╒"жлд0≈ ~╠k,}Шя|≥ф)/VчЖЛЙj÷Qф©dж▓9-O÷╦A≥g5▓XО└s┤Iay&1(v0fa,лs╖E\L6▀╕Q6лhВ-SU ┘╛╘Q}A╙б|д,Ёп|0>╕║Д┘╗V)l©╚⌠МнЛtЗБvTB▒2wMЛыфйшёM⌠аMг╫HSmяJ°╟∙КС╜МЯ░}jЖ=╠й╓√ШЕгGL╥еL╓J╬▒/╘╪y╣╛z≤ш1Л{╛	5V'Ф╬ш=|1╠Iэj?&F(ъ5X<╨ЯdМЮ≥╚≤nЁleт╞EbH/цSwв█ШM╡XhIз.п6м┌э(Щ╠вОsЯ,┐╩[
+╢GN≥8нд1I∙ъ┬;&═г$YбУЛ⌠@┬Хvwu┐╬Ъ▒D1L4Ю&▓!╬,╢Э╨ЦЛуNyO~щТw╫ъy▀oT:┼pS'SР4kb3fYРG┬╠ъВ═|HGъ╒М)Гш▒Ы2╬╠⌠)<S&65z╚М²3н╪jШЁy'Ё/g┴af&Ix]╒≥шW.█3нt╢5dУNФv╒шtМ^╪+▀м$╠ЭK╫/╫╖╦}!cъ&+wйВ8} ·:НRшя^B÷VТЯ{м╬Б_╦²≤©иdu▐С┐╨ФРЗ≤Ы]оvВn├УОЬ3з2ВФЩ╢÷юьHиПj5б≥9╓▓%╜ы/jw╘Т╙U╢ЛК▐╛■╜(╨JT#ЦВ-∙╥O╟4  T▐_s@rу■┐╪═█ёРхgd╛┬[,≥!ЫЬЧ©=%&5╔h:┌ац┌шпшИ3╝╞ ╢6Сщ▄═╘╙ =eЖ9o⌠╔SФК╓рюР*<сJv6n!≈Рk▒GV3Ы÷\┴²в╪YК╫П,чК√≥,P╥Щ})йпKя═∙-B╬─H>©$√I╧Ц╥Oрбв┴TЯСЩq4Л╕к&╫-ЧД⌡╡ю04. TУpЙщ©у7°!Р▀√К▌VjЩz▄ь┤Y]zu? пд@ y═юq©	 ф?ЮЛ÷ ж© xDKq╠у╬┴*Ж( ╜еp╗в│?╨╗й0ZQ√%°Z≤O)Й╢"o░╝рr\Аq
+2еЖ;°!J╦яЩЙчF/уiУ=VтT┼EЫбxа1`0
+·J╞Hs)D4|M[]б=╒юu	≤ш█ЙX√g┐┼P
+э√Oq≤M<:"[rG^к .E╖-чVk╣z8SBjзu║LВ^Г@│_═И╙ЪГЬь╜И▓╧6`h.з▐q░ч╦Ш·Ym░ФК╥╪<m_ь╕ kнoВ^Иb∙МХФф▄'Ъw<р°w.х]╬<╞гIFB╟яF ╒E"║▄Ь▌Я╩яzEпх0т╪хG▀@BDЗхз╪;4н▒▒Pi"K--≈╪ГЧП	qИ#░с"░PО?▄@н▀ ║─pк┬~≈Э▀хЬ?░юП▀▄BNЪ@е/2└>Ъ│▌_d└хЩ│╫х
+ЧX╫╩0▄ЧDТ0юф┼;■4"╗▄╖P=J▄4░╕57▒%▒╕°2Тюaц╜цЭHa─j▄0А┴,:S≤@E2$нф^FТ2╝ь╧■qнa3╝?\╟▄╕ю>N╧}q║a°ВxйШцйUц─kО∙Ь┤∙+╞!{╕!2h !TyDюZRkU@©┬╞╘Э│Ц`QшU\┤р&╟┤U9√г#╓кТ┘▐п.╓l∙?B]║╣Л╔к░⌡э▌[╩ХТуG^$╣╫#≈╝Bo╢>К╩B╫Жзе╕Ф}└tА┌цВсеt5Я#╞K(n╠G .BrR?m╨мZЗ╚ЖPЙ╬▌q╪яУТА▐PЙ╩▌!╞жw9BЙеaМЗСРeЕЖЙ╙В>B╪Р╢~~└{уVхы░Ую"c ш┌Чnz б╘nd}⌡I{/╪dIс"a╓ha$2┬!│▒Д@┬bd C9"х│дх@ ├r1D░!2┬▒│@Дb┬ Cd9╥5═r─ВЯzЬ┤k ╬Л}З├~_©pПП╥²5╜g╙Ьж╢^╧~T[oxЮЧ\s╧ЕЧg(]w8АЪG║√{╜щuДGв ЪУС²Ы÷6@┌0I Ж6≈┤ЭЕ▐tcоГb╧ьAIВI▒А`qЬ`З=6╤▐°⌠ЭdP'кю╡}m6Й⌡u.l ?ШЫйкOX╫Fфя▐qккМ─O;еh?8зV;еуoЯИюМ`_{Ж╢з▐²'l8ш!▌EШ│сvш'чE┴Х╤шЛПeЩvx©/чXя`эA7▒G╦A÷ЭЪ▓Pэr*═Н ⌡{│О╨}о|=≤PхжQ▀ы-{ЪmЗEхЙбЧ9Л÷ЩгЖ*╟В П·пzв>щзК9щAd╥┬└;═О╬=НШц>пхз░9UT╬ПГЖъЧЮ┌ъ÷I? ╞Шэ&√Щ'dyГJЮУ╜w╗КЙ Ж╫wCМЛCЪю░m╛}u╩НX╫ВAО~щ╜P_╡Ж"Ъ`░ul╫╙В$y{ъSН■`ВЪШуOuЭЧ│.ПЯ]Ь?ЭАЧ7 p|ЭГ(l?(Б~┴ъ|8 wпВщъ~о╠Ш█|Д╩▌Ф■yл1Ь /╪┐
+╞│пв~╛Ё╕иЦс**╣Юk╜ ЫЮo╬А╝╫5ЯobеРA╝9Кk╪П?ЪpвГэУ9~Ь²wРAНy{Бzm░▌:q╦Ф┼┐╨Хд/}q@Е┐=t
+├3░А╨q╩Нк▐ЭЕ╗╢╥Л${Ы*/²ЬK⌡▐Тя8h⌠ЧA╓kхВзх]╧эs╘Д▓i▒╤2·°╩МaМ|`┐ЭЗ©╕═╞vЕ┘-l╠9HcPЛsH┼]╖Лл{kыesP&{┐хы°d╤НЁоГ═²╤╔╢?m:j╚пA{М\·╞:,Ё-AlМяrш⌠шmtP~╩┐чnХ┌ aц,OЯсj╪ёъ}}PкArНт┼;ПВэ4ИV ╨PЗO÷╬И[ЖЦ╚Г╦▄ъ;L⌠KВ═щ▄ъvщO^÷▓I≤@┼ш┼щ╔п:╛╦%и╗╩═7z╫Zy┐XтйЩд*хO╠R@│P═(
+│═@(P
+СъЙ'╫8░Р?≥═j ╛╖╜з
+JФ[i╥(╨ эKъс_вЖl
+·;Я╩еТEкрqс≤ч┘ЧП╩÷{╞пзЩ7╒╙A:ь≥╚╣╙1Ъ6)ЭX╔нэ═╧W3÷К╫╕и3о ░MS]>У<СРX~S°сЪ╥⌡>s╖QЕЩД═	дn"В#·@╪0`─rаuk3с$nkJ^d[SgЙ·╛╔;A)kВъOu8Ю@ЪkL%≈XG▒╞W│═@(P
+@│P═(
+│═@(P
+@Ъ         (   gf      (       ─                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
